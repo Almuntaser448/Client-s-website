@@ -15,30 +15,6 @@ header {
 
 .brand {
     display: inline-block;
-    font-size: 24px; /* Adjust font size of the title */
-    margin-bottom: 10px; /* Add margin for spacing */
-}
-
-.red-box {
-    display: inline-block;
-    background-color: #d50000;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-.black-box {
-    background-color: #000;
-    padding: 5px;
-    display: inline-block;
-    color: #fff;
-}
-
-.du-pneu {
-    margin-top: 5px;
-}
-
-.brand {
-    display: inline-block;
     font-size: 28px; /* Adjust font size of the title */
     margin-bottom: 10px; /* Add margin for spacing */
     position: relative; /* Position the brand container relative */
@@ -75,21 +51,30 @@ header {
     bottom: 0;
     left: 0;
     font-size: 16px; /* Adjust font size of "Montmagny" */
-    animation: moveDiagonalWord 5s infinite linear;
-    white-space: nowrap; /* Prevent line breaks for continuous diagonal movement */
-    transform-origin: bottom left; /* Set the origin to bottom left */
-    transform: translate(0, 100%) rotate(-45deg) skewY(45deg); /* Initial position and rotation */
+    transform: rotate(-45deg); /* Rotate the word by 45 degrees */
+}
+
+.title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 20px; /* Adjust font size of "Montmagny" */
+    animation: moveDiagonalTitle 3s infinite linear; /* Decrease duration to 3s for faster animation */
+    transform: rotate(-45deg); /* Match the rotation angle of the text */
 }
 
 @keyframes moveDiagonalTitle {
     0% {
-        transform: translate(0, 100%); /* Starting position, bottom left of red box */
+        transform: translate(0, 100%) rotate(-45deg); /* Starting position, bottom left of red box */
     }
     100% {
-        transform: translate(100%, -100%); /* Ending position, upper right of red box */
+        transform: translate(100%, -100%) rotate(-45deg); /* Ending position, upper right of red box */
     }
 }
 
+
+
+/* Define the animation for the diagonal word movement */
 @keyframes moveDiagonalWord {
     0% {
         transform: translate(0, 100%) rotate(-45deg) skewY(45deg); /* Starting position, rotated and skewed */
