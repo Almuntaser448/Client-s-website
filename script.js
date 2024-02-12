@@ -68,27 +68,34 @@ window.onload = function() {
             .catch(error => console.error('Error fetching reviews:', error));
     }
     var openingHours = {
-        "Monday": "9:00 AM - 6:00 PM",
-        "Tuesday": "9:00 AM - 6:00 PM",
-        "Wednesday": "9:00 AM - 6:00 PM",
-        "Thursday": "9:00 AM - 8:00 PM",
-        "Friday": "9:00 AM - 6:00 PM",
-        "Saturday": "10:00 AM - 4:00 PM",
-        "Sunday": "Closed"
+        "lundi": "9:00 - 19:00",
+        "mardi": "9:00 - 19:00",
+        "mercredi": "9:00 - 19:00",
+        "jeudi": "9:00 - 19:00",
+        "vendredi": "9:00 - 19:00",
+        "samedi":  "9:00 - 19:00",
+        "dimanche":  "Fermé"
     };
-
-    // Display current day's opening hours
-    var today = new Date().toLocaleString('en-us', { weekday: 'long' });
+    
+    // Get today's opening hours
+    var today = new Date().toLocaleString('fr-FR', { weekday: 'long' }).toLowerCase();
+    
+    // Display today's opening hours
     var currentDayOpeningHours = document.getElementById("currentDayOpeningHours");
-    currentDayOpeningHours.innerHTML = "<h2>Today's Opening Hours:</h2><p>" + openingHours[today] + "</p>";
+    currentDayOpeningHours.innerHTML = "<h2>Heures d'ouverture d'aujourd'hui :</h2><p>" + (openingHours[today] || "Fermé") + "</p>";
+    
+// Display the full timetable
+var fullTimetable = document.getElementById("fullTimetable");
+var tableHtml = "<h2>Tableau complet des horaires :</h2><table><tr><th>Jour</th><th>Heures d'ouverture</th></tr>";
+for (var day in openingHours) {
+    // Capitalize the first letter of the day
+    var capitalizedDay = day.charAt(0).toUpperCase() + day.slice(1);
+    tableHtml += "<tr><td>&nbsp;&nbsp;" + capitalizedDay + "</td><td>" + openingHours[day] + "</td></tr>";
+}
+tableHtml += "</table>";
+fullTimetable.innerHTML = tableHtml;
 
-    // Display full timetable
-    var fullTimetable = document.getElementById("fullTimetable");
-    var tableHtml = "<h2>Full Timetable:</h2><table><tr><th>Day</th><th>Opening Hours</th></tr>";
-    for (var day in openingHours) {
-        tableHtml += "<tr><td>" + day + "</td><td>" + openingHours[day] + "</td></tr>";
-    }
-    tableHtml += "</table>";
-    fullTimetable.innerHTML = tableHtml;
+    
+    
 
 };
