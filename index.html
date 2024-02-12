@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>L'USINE DU PNEU</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        /* Additional styles can be added here */
+    </style>
 </head>
 <body>
     <header>
@@ -12,13 +15,10 @@
             <div class="red-box">
                 <div class="black-box">L'USINE</div>
                 <div class="du-pneu">DU PNEU</div>
+                <h1 class="title montmagny">Montmagny</h1> <!-- Move the title inside the red box -->
             </div>
-            <h1 class="title montmagny ">Montmagny</h1>
         </div>
     </header>
-    
-    
-    
     
 
     <nav>
@@ -27,7 +27,7 @@
         <a href="#">Témoignages</a>
         <a href="#">Contact</a>
     </nav>
-
+    <div id="currentDayOpeningHours"></div>
     <div class="container">
         <h2>Modèles de Pneus</h2>
         <div id="tireModels">
@@ -46,13 +46,13 @@
 
         <h2>Carte Google & Avis</h2>
         <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.67890!2dlongitude!3dlatitude!4d0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDAwJzE3LjkiTiAwwrAxMic1Mi4wIlc!5e0!3m2!1sen!2sus!4v1644567890......" allowfullscreen></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d275.2822021417091!2d2.3651349023020574!3d48.97365840138126!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e669719ca5e6a5%3A0x51ebc26b4af304b8!2sL&#39;usine%20du%20Pneu!5e0!3m2!1sar!2sfr!4v1707718930973!5m2!1sar!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <!-- Placeholder for Google Maps iframe with location -->
 
-        <!-- Placeholder for Google Reviews API integration -->
+        <div id="google-reviews"></div>
     </div>
-
+    <div id="fullTimetable"></div>
     <footer>
         <p>&copy; 2024 L'USINE DU PNEU. Tous droits réservés.</p>
     </footer>

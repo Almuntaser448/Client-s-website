@@ -18,13 +18,18 @@ header {
     font-size: 28px; /* Adjust font size of the title */
     margin-bottom: 10px; /* Add margin for spacing */
     position: relative; /* Position the brand container relative */
+    width: 70%; /* Adjust width of the brand container */
+    text-align: center; /* Center the text */
 }
 
 .red-box {
     background-color: #d50000;
-    padding: 10px;
+    padding: 5%;
     border-radius: 5px;
     display: inline-block;
+    width: 100%; /* Adjust the width of the red box */
+    max-width: 500px; /* Set maximum width to prevent overflow */
+    position: relative; /* Adjust position to relative */
 }
 
 .black-box {
@@ -32,60 +37,52 @@ header {
     padding: 5px;
     color: #fff;
     font-size: 32px; /* Adjust font size of the black box */
+    position: absolute; /* Position the black box */
+    top: 31%; /* Align it to the vertical middle of the red box */
+    left: 50%; /* Align it to the horizontal middle of the red box */
+    transform: translate(-50%, -50%); /* Move it back by half of its width and height */
+    width: calc(100% - 10px); /* Adjust width to fit within red box padding */
+    max-width: 97%; /* Set maximum width to prevent overflow */
+    height: 50%; /* Set the height to 50% */
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
 }
 
-.du-pneu {
-    margin-top: 5px;
+.du-pneu{
+    padding: 5px;
+    color: #fff;
+    font-size: 32px; /* Adjust font size of the black box */
+    position: absolute; /* Position the black box */
+    top: 55%; /* Align it to the top of the red box */
+    left: 1%; /* Align it to the left of the red box */
+    width: calc(100% - 10px); /* Adjust width to fit within red box padding */
+    max-width: 97%; /* Set maximum width to prevent overflow */
+    height:30%
 }
-
 .title {
-    position: absolute;
-    bottom: 0;
-    left: 0;
     font-size: 20px; /* Adjust font size of "Montmagny" */
-    animation: moveDiagonalTitle 5s infinite linear;
+    position: absolute;
+    bottom: 5px; /* Adjust position to be relative to the red box */
+    left: 5px; /* Adjust position to be relative to the red box */
+    width: calc(100% - 10px); /* Adjust width to fit within red box padding */
+    max-width: 490px; /* Set maximum width to prevent overflow */
+    white-space: nowrap; /* Prevent line breaks for continuous diagonal movement */
+    animation: moveDiagonalTitle 3s infinite linear; /* Add animation back */
 }
 
 .montmagny {
-    position: absolute;
-    bottom: 0;
-    left: 0;
     font-size: 16px; /* Adjust font size of "Montmagny" */
-    transform: rotate(-45deg); /* Rotate the word by 45 degrees */
+    white-space: nowrap; /* Prevent line breaks for continuous diagonal movement */
 }
-
-.title {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    font-size: 20px; /* Adjust font size of "Montmagny" */
-    animation: moveDiagonalTitle 3s infinite linear; /* Decrease duration to 3s for faster animation */
-    transform: rotate(-45deg); /* Match the rotation angle of the text */
-}
-
 @keyframes moveDiagonalTitle {
     0% {
-        transform: translate(0, 100%) rotate(-45deg); /* Starting position, bottom left of red box */
+        transform: translate(-50%, -50%) rotate(-45deg); /* Starting position, inside the red box */
     }
     100% {
-        transform: translate(100%, -100%) rotate(-45deg); /* Ending position, upper right of red box */
+        transform: translate(60%, -280%) rotate(-45deg); /* Ending position, inside the red box */
     }
 }
-
-
-
-
-/* Define the animation for the diagonal word movement */
-@keyframes moveDiagonalWord {
-    0% {
-        transform: translate(0, 100%) rotate(-45deg) skewY(45deg); /* Starting position, rotated and skewed */
-    }
-    100% {
-        transform: translate(100%, -100%) rotate(-45deg) skewY(45deg); /* Ending position, rotated and skewed */
-    }
-}
-
-
 
 
 
@@ -138,6 +135,6 @@ footer {
 
 .map iframe {
     width: 100%;
-    height: 400px;
+    height: 70%;
     border: none;
 }
