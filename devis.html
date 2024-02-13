@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>L'USINE DU PNEU</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <style>
-        /* Additional styles can be added here */
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="styles.css">
+
+<title>Demander une devis</title>
+
 </head>
 <body>
+    <script src="script.js"></script>
     <header>
         <div class="brand">
             <img class="rightTires" src="tiresR.png" alt="Pneu">
@@ -29,33 +29,37 @@
             <a href="https://www.snapchat.com/add/u_dupneumtgy" target="_blank"><img src="snapchat-icon.png" alt="Snapchat"></a>
         </div>
     </header>
-    
-
     <nav>
         <a href="index.html">Accueil</a>
         <a href="#">Modèles de Pneus</a>
         <a href="devis.html">Demander une devis</a>
         <a href="contact.html">Contact</a>
     </nav>
-    <div id="currentDayOpeningHours"></div>
+
     <div class="container">
-        <h2>Modèles de Pneus</h2>
-        <div id="tireModels">
-            <!-- Placeholder for tire models images and descriptions -->
+        <h2>Votre devis en toute simplicité</h2>
+        <div class="form-container">
+            <form action="send_email.php" method="post" class="contact-form">
+                <label for="name">Votre nom:</label><br>
+                <input type="text" id="name" name="name" required><br>
+                
+                <label for="email">Votre email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                
+                <label for="tire-size">La taille de votre pneu:</label><br>
+                <input type="text" id="tire-size" name="tire-size" required><br>
+                
+                <label for="message">Votre message:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br>
+                
+                <input type="submit" value="Obtenez votre devis!">
+            </form>
         </div>
+    </div>
 
 
 
 
-        <h2>Carte Google & Avis</h2>
-        <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2618.939812794341!2d2.3653313999999996!3d48.9736701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e669719ca5e6a5%3A0x51ebc26b4af304b8!2sL&#39;usine%20du%20Pneu!5e0!3m2!1sfr!2sfr!4v1707830596281!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    </div>
 
-
-    <footer>
-        <p>&copy; 2024 L'USINE DU PNEU. Tous droits réservés.</p>
-    </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>

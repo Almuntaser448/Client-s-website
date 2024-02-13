@@ -2,87 +2,95 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #000;
+    background-color: #201e1e;
     color: #fff;
 }
 
 header {
-    background-color: #000;
+    background-color: #201e1e;
     color: #fff;
     padding: 20px;
     text-align: center;
 }
 
+label::after {
+    content: " *"; /* Add asterisk after label text */
+    color: red;   /* Set color to red */
+}
+
 .brand {
     display: inline-block;
-    font-size: 28px; /* Adjust font size of the title */
-    margin-bottom: 10px; /* Add margin for spacing */
-    position: relative; /* Position the brand container relative */
-    width: 70%; /* Adjust width of the brand container */
-    text-align: center; /* Center the text */
+    font-size: 48px; /* Augmenter la taille de la police du titre */
+    margin-bottom: 10px;
+    position: relative;
+    width: 70%;
+    text-align: center;
 }
 
 .red-box {
-    background-color: #d50000;
-    padding: 5%;
+    
+    background-color: #c31b1b;
+    padding: 7%;
     border-radius: 5px;
     display: inline-block;
-    width: 100%; /* Adjust the width of the red box */
-    max-width: 500px; /* Set maximum width to prevent overflow */
-    position: relative; /* Adjust position to relative */
+    width: 24%; /* Réduire la largeur de la boîte */
+    max-width: 500px;
+    position: relative;
+    margin: 20px; /* Ajouter un espacement autour de la boîte */
+    border: 5px solid black;
 }
 
 .black-box {
+    font-weight: bold;
     background-color: #000;
     padding: 5px;
     color: #fff;
-    font-size: 32px; /* Adjust font size of the black box */
-    position: absolute; /* Position the black box */
-    top: 31%; /* Align it to the vertical middle of the red box */
-    left: 50%; /* Align it to the horizontal middle of the red box */
-    transform: translate(-50%, -50%); /* Move it back by half of its width and height */
-    width: calc(100% - 10px); /* Adjust width to fit within red box padding */
-    max-width: 97%; /* Set maximum width to prevent overflow */
-    height: 50%; /* Set the height to 50% */
-    display: flex; /* Use flexbox */
-    justify-content: center; /* Center the content horizontally */
-    align-items: center; /* Center the content vertically */
+    font-size: 70px; /* Augmenter la taille de la police du texte */
+    position: absolute;
+    top: 32%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(100% - 10px);
+    max-width: 95%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.du-pneu{
+.du-pneu {
+    font-weight: bold;
     padding: 5px;
     color: #fff;
-    font-size: 32px; /* Adjust font size of the black box */
-    position: absolute; /* Position the black box */
-    top: 55%; /* Align it to the top of the red box */
-    left: 1%; /* Align it to the left of the red box */
-    width: calc(100% - 10px); /* Adjust width to fit within red box padding */
-    max-width: 97%; /* Set maximum width to prevent overflow */
-    height:30%
-}
-.title {
-    font-size: 20px; /* Adjust font size of "Montmagny" */
+    font-size: 70px; /* Augmenter la taille de la police du texte */
     position: absolute;
-    bottom: 5px; /* Adjust position to be relative to the red box */
-    left: 5px; /* Adjust position to be relative to the red box */
-    width: calc(100% - 10px); /* Adjust width to fit within red box padding */
-    max-width: 490px; /* Set maximum width to prevent overflow */
-    white-space: nowrap; /* Prevent line breaks for continuous diagonal movement */
-    animation: moveDiagonalTitle 3s infinite linear; /* Add animation back */
+    top: 50%;
+    left: 1%;
+    width: calc(100% - 10px);
+    max-width: 97%;
+    height: 30%;
+}
+
+.title {
+    font-size: 48px; /* Augmenter la taille de la police du titre */
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    width: calc(100% - 10px);
+    max-width: 490px;
+    white-space: nowrap;
+    animation: moveDiagonalTitle 3s infinite linear;
 }
 
 .montmagny {
-    font-size: 16px; /* Adjust font size of "Montmagny" */
+    top: 86%;
+    font-style: italic;
+    font-size: 40px; /* Adjust font size of "Montmagny" */
     white-space: nowrap; /* Prevent line breaks for continuous diagonal movement */
+    color:  #ffff00;
 }
-@keyframes moveDiagonalTitle {
-    0% {
-        transform: translate(-50%, -50%) rotate(-45deg); /* Starting position, inside the red box */
-    }
-    100% {
-        transform: translate(60%, -280%) rotate(-45deg); /* Ending position, inside the red box */
-    }
-}
+
+
 
 
 
@@ -120,14 +128,85 @@ footer {
     margin: 20px;
     padding-bottom: 6%;
 }
+.social-icons {
+    position: absolute;
+    top: 15%;
+    left: 20px;
+    transform: translateY(-50%);
+}
 
-.testimonial {
-    margin-bottom: 20px;
+.social-icons a {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.leftTires,
+.rightTires {
+    width: 25%; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    position: absolute; /* Position the tires */
+    top: 50%; /* Adjust vertically */
+    transform: translateY(-50%); /* Center vertically */
+    opacity: 0.4; /* Set opacity to 70% */
+
+}
+
+.leftTires {
+
+    left: 19%; /* Position on the left side */
+}
+
+.rightTires {
+
+    right: 19%; /* Position on the right side */
+}
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+    background-color: #201e1e; /* Set background color */
+    color: #fff; /* Set text color */
+}
+
+.form-container form {
+    width: 70%;
     padding: 20px;
-    background-color: #333;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Shadow effect */
 }
 
-.testimonial p {
-    margin: 0;
+.form-container label,
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container textarea,
+.form-container input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+    color: #fff;
+    box-sizing: border-box;
 }
 
+.form-container textarea {
+    resize: vertical; /* Allow vertical resizing of textarea */
+}
+
+.form-container input[type="submit"] {
+    cursor: pointer;
+    background-color: #d50000; /* Red color for submit button */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+.form-container input[type="submit"]:hover {
+    background-color: #ff3333; /* Darker red color on hover */
+}

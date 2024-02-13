@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="styles.css">
+
+<title>Contactez-Nous</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #000;
+        color: #fff;
+    }
+    .container {
+        max-width: 600px;
+        margin: 50px auto;
+        text-align: center;
+    }
+    .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #d50000;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        margin: 10px;
+        cursor: pointer;
+        border: none;
+        outline: none;
+    }
+    .contact-form {
+        display: none;
+        margin-top: 20px;
+    }
+    input[type="text"], input[type="email"], textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+        border-radius: 5px;
+        border: 1px solid #fff;
+        box-sizing: border-box;
+        background-color: #444;
+        color: #fff;
+    }
+    input[type="submit"] {
+        background-color: #d50000;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+    <script src="script.js"></script>
+    <header>
+        <div class="brand">
+            <img class="rightTires" src="tiresR.png" alt="Pneu">
+            <img class="leftTires"  src="tires.png" alt="Pneu">
+
+            <div class="red-box">
+                <div class="black-box">L'USINE</div>
+                <div class="du-pneu">DU PNEU</div>
+                <h1 class="title montmagny">Montmagny</h1> <!-- Move the title inside the red box -->
+            </div>
+            
+          
+        </div>
+        <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/usinedupneu_mtgy" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
+            <a href="https://www.snapchat.com/add/u_dupneumtgy" target="_blank"><img src="snapchat-icon.png" alt="Snapchat"></a>
+        </div>
+    </header>
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="#">Modèles de Pneus</a>
+        <a href="devis.html">Demander une devis</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+<div class="container">
+    <h2>Contactez-Nous</h2>
+    <button class="btn" onclick="openTelephone()">Appelez-nous</button>
+
+    <button class="btn" onclick="openMailTo()">Envoyer un email</button>
+    <div id="phoneForm" class="contact-form">
+        <p>Appelez-nous au : 06 34 29 24 71</p>
+    </div>
+</div>
+
+
+
+</body>
+</html>

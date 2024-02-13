@@ -18,23 +18,6 @@ window.onload = function() {
 
     displayTireModels();
 
-    // Dummy data for testimonials
-    var testimonialsData = [
-        { videoUrl: "https://www.youtube.com/embed/VIDEO_ID", author: "Nom du Client" }
-    ];
-
-    // Function to display testimonials
-    function displayTestimonials() {
-        var testimonialsElement = document.getElementById("testimonials");
-        var html = "";
-        testimonialsData.forEach(function(testimonial) {
-            html += "<div class='testimonial'><iframe width='560' height='315' src='" + testimonial.videoUrl + "' frameborder='0' allowfullscreen></iframe><p>- " + testimonial.author + "</p></div>";
-        });
-        testimonialsElement.innerHTML = html;
-    }
-
-    displayTestimonials();
-
     function displayGoogleMapsReviews() {
         // Replace 'YOUR_PLACE_ID' with your actual place ID
         const placeId = 'YOUR_PLACE_ID';
@@ -90,7 +73,7 @@ var tableHtml = "<h2>Tableau complet des horaires :</h2><table><tr><th>Jour</th>
 for (var day in openingHours) {
     // Capitalize the first letter of the day
     var capitalizedDay = day.charAt(0).toUpperCase() + day.slice(1);
-    tableHtml += "<tr><td>&nbsp;&nbsp;" + capitalizedDay + "</td><td>" + openingHours[day] + "</td></tr>";
+    tableHtml += "<tr><td>&nbsp;&nbsp;" + capitalizedDay + "</td><td>&nbsp;&nbsp" + openingHours[day] + "</td></tr>";
 }
 tableHtml += "</table>";
 fullTimetable.innerHTML = tableHtml;
@@ -99,3 +82,15 @@ fullTimetable.innerHTML = tableHtml;
     
 
 };
+
+    function openTelephone() {
+        window.open('tel:+33634292471', '_blank');
+    }
+
+
+
+
+    function openMailTo() {
+        window.open('mailto:votremail@mail.com', '_blank');
+    }
+
