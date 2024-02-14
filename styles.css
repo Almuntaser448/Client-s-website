@@ -31,7 +31,7 @@ label::after {
     padding: 7%;
     border-radius: 5px;
     display: inline-block;
-    width: 24%;
+    width: 30%;
     max-width: 500px;
     position: relative;
     margin: 20px;
@@ -43,13 +43,13 @@ label::after {
     background-color: #000;
     padding: 5px;
     color: #fff;
-    font-size: 70px;
+    font-size: 72px;
     position: absolute;
     top: 32%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: calc(100% - 10px);
-    max-width: 95%;
+    width: calc(106% - 10px);
+    max-width: 96%;
     height: 50%;
     display: flex;
     justify-content: center;
@@ -60,7 +60,7 @@ label::after {
     font-weight: bold;
     padding: 5px;
     color: #fff;
-    font-size: 70px;
+    font-size: 72px;
     position: absolute;
     top: 50%;
     left: 1%;
@@ -107,12 +107,22 @@ label::after {
       text-shadow: none;
     }
 }
-
+.slogan{
+    position: absolute;
+    top: 110%;
+    font-family:'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 45px;
+    white-space: nowrap;
+    left: -50%;
+    color:#fff;
+}
 
 nav {
     background-color: #d50000;
     padding: 10px;
     text-align: center;
+    margin-top: 50px;
 }
 
 nav a {
@@ -134,7 +144,7 @@ nav a:hover {
 }
 .social-icons {
     position: absolute;
-    top: 15%;
+    top: 20%;
     left: 20px;
     transform: translateY(-50%);
 }
@@ -145,13 +155,13 @@ nav a:hover {
 }
 
 .social-icons img {
-    width: 30px;
-    height: 30px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
 }
 .leftTires,
 .rightTires {
-    width: 25%; /* Adjust width as needed */
+    width: 30%; /* Adjust width as needed */
     height: auto; /* Maintain aspect ratio */
     position: absolute; /* Position the tires */
     top: 50%; /* Adjust vertically */
@@ -162,12 +172,12 @@ nav a:hover {
 
 .leftTires {
 
-    left: 19%; /* Position on the left side */
+    left: 11%; /* Position on the left side */
 }
 
 .rightTires {
 
-    right: 19%; /* Position on the right side */
+    right: 11%; /* Position on the right side */
 }
 .form-container {
     display: flex;
@@ -296,4 +306,53 @@ nav a:hover {
     }
     .logoMarques .brid {
         margin-top: 2%; /* Add extra margin to the top */
+    }
+    main {
+        padding: 20px;
+    }
+    
+    .contenGeo {
+        margin-bottom: 30px;
+    }
+    
+    .h2Geo {
+        color: #c2463a;
+    }
+    
+    ul {
+        list-style-type: none;
+        padding-left: 0;
+    }
+    
+    /* Styles spécifiques pour la section de contenu */
+    
+    .contentGeo p {
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+    
+    .contenGeo ul li::before {
+        content: '\2022';
+        color: #c2463a;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+    }
+    .titrePromo{
+        font-weight: bold;
+        font-size: 45px;
+        text-align: center;
+        margin: 4%;
+    }
+    .pasPromo{
+        margin: 1%;
+        width: 70%;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Shadow effect */
+    }
+    .promoTire{
+        font-weight: bold;
+        font-size: 20;
     }
