@@ -217,6 +217,10 @@ nav a:hover {
 .form-container label {
     background-color: #333; /* Change the background color of the label */
 }
+.containerPneus{
+    display: flex;
+    flex-direction: column;
+}
 .tables-container {
     display: flex;
     margin: 5%;
@@ -269,20 +273,27 @@ nav a:hover {
     .prix{
         padding: 1%;
     }
-    .logoMarques{
-        background-color: #c2463a;
+    .logoMarques {
         display: flex;
-        flex-direction: column;
-        align-items: center; /* Align images in the center */
+        justify-content: space-around; /* Horizontally distribute images */
+        align-items: flex-start; /* Align images to the top */
         margin-top: 20px; /* Adjust margin as needed */
+        position: relative; /* Set container to relative positioning */
     }
+    
     .logoMarques img {
-        width: 330px;
+        width: 20%;
         height: auto;
-
-        margin: 5px; /* Add margin between images */
+        margin: 1%; /* Add margin around all images */
     }
-    .containerPneus{
-        display: flex;
-        flex-direction: column;
+    
+    /* Adjust margin for the 'good.png' image */
+    .logoMarques .good {
+        margin-top: 3%; /* Add extra margin to the top */
+    }
+    .logoMarques .mich {
+        margin-top: 1%; /* Add extra margin to the top */
+    }
+    .logoMarques .brid {
+        margin-top: 2%; /* Add extra margin to the top */
     }
