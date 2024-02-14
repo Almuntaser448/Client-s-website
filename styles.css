@@ -17,10 +17,9 @@ label::after {
     content: " *"; /* Add asterisk after label text */
     color: red;   /* Set color to red */
 }
-
 .brand {
     display: inline-block;
-    font-size: 48px; /* Augmenter la taille de la police du titre */
+    font-size: 48px;
     margin-bottom: 10px;
     position: relative;
     width: 70%;
@@ -28,15 +27,14 @@ label::after {
 }
 
 .red-box {
-    
     background-color: #c31b1b;
     padding: 7%;
     border-radius: 5px;
     display: inline-block;
-    width: 24%; /* Réduire la largeur de la boîte */
+    width: 24%;
     max-width: 500px;
     position: relative;
-    margin: 20px; /* Ajouter un espacement autour de la boîte */
+    margin: 20px;
     border: 5px solid black;
 }
 
@@ -45,7 +43,7 @@ label::after {
     background-color: #000;
     padding: 5px;
     color: #fff;
-    font-size: 70px; /* Augmenter la taille de la police du texte */
+    font-size: 70px;
     position: absolute;
     top: 32%;
     left: 50%;
@@ -62,7 +60,7 @@ label::after {
     font-weight: bold;
     padding: 5px;
     color: #fff;
-    font-size: 70px; /* Augmenter la taille de la police du texte */
+    font-size: 70px;
     position: absolute;
     top: 50%;
     left: 1%;
@@ -72,7 +70,7 @@ label::after {
 }
 
 .title {
-    font-size: 48px; /* Augmenter la taille de la police du titre */
+    font-size: 48px;
     position: absolute;
     bottom: 5px;
     left: 5px;
@@ -85,13 +83,30 @@ label::after {
 .montmagny {
     top: 86%;
     font-style: italic;
-    font-size: 40px; /* Adjust font size of "Montmagny" */
-    white-space: nowrap; /* Prevent line breaks for continuous diagonal movement */
+    font-size: 40px;
+    white-space: nowrap;
     color:  #ffff00;
 }
 
+.shining-text {
+    animation: shining 2s infinite;
+}
 
-
+/* Define the keyframes for the shining effect */
+@keyframes shining {
+    0% {
+      color: #fff;
+      text-shadow: none;
+    }
+    50% {
+      color: #fff;
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+    100% {
+      color: #fff;
+      text-shadow: none;
+    }
+}
 
 
 nav {
@@ -109,17 +124,6 @@ nav a {
 
 nav a:hover {
     text-decoration: underline;
-}
-
-footer {
-    background-color: #000;
-    color: #fff;
-    padding: 1%;
-    text-align: center;
-    position: fixed; /* Set position to fixed */
-    bottom: 0; /* Align to the bottom */
-    width: 100%; /* Take up the full width of the viewport */
-    z-index: 100; /* Set a high z-index to ensure it's above other content */
 }
 
 
@@ -189,7 +193,7 @@ footer {
 .form-container input[type="submit"] {
     width: 100%;
     padding: 10px;
-    margin: 10px 0;
+    margin: 20px 0;
     border: none;
     border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
@@ -210,3 +214,75 @@ footer {
 .form-container input[type="submit"]:hover {
     background-color: #ff3333; /* Darker red color on hover */
 }
+.form-container label {
+    background-color: #333; /* Change the background color of the label */
+}
+.tables-container {
+    display: flex;
+    margin: 5%;
+    background-color: #c2463a; /* Background color for both tables */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add shadow to the table container */
+    overflow: hidden; /* Ensure overflow is hidden to maintain rounded corners */
+}
+
+
+.table {
+    flex: 1;
+    border-collapse: collapse; /* Collapse table borders */
+    color: #fff; /* Text color */
+}
+
+.table-header {
+    background-color: #c2463a; /* Header background color */
+    color: black; /* Header text color */
+    padding: 10px;
+    font-weight: bold;
+    font-size: 45px;
+
+}
+
+.table td, .table th {
+    border: none; /* Remove cell borders */
+    padding: 10px 10px;
+
+}
+
+.table-separator {
+    width: 5px; /* Width of the separator */
+    background-color: #fff; /* Color of the separator */
+}
+.rightAl{
+    text-align: right;
+
+}
+
+.centerAl{
+    text-align: center;
+
+}
+
+.leftAl{
+    text-align: left;
+    color: #ffff00;
+    }
+    .prix{
+        padding: 1%;
+    }
+    .logoMarques{
+        background-color: #c2463a;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Align images in the center */
+        margin-top: 20px; /* Adjust margin as needed */
+    }
+    .logoMarques img {
+        width: 330px;
+        height: auto;
+
+        margin: 5px; /* Add margin between images */
+    }
+    .containerPneus{
+        display: flex;
+        flex-direction: column;
+    }

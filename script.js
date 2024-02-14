@@ -1,23 +1,5 @@
 window.onload = function() {
-    // Dummy data for tire models
-    var tireModelsData = [
-        { name: "Modèle 1", description: "Description du Modèle 1" },
-        { name: "Modèle 2", description: "Description du Modèle 2" },
-        { name: "Modèle 3", description: "Description du Modèle 3" }
-    ];
-
-    // Function to display tire models
-    function displayTireModels() {
-        var tireModelsElement = document.getElementById("tireModels");
-        var html = "";
-        tireModelsData.forEach(function(model) {
-            html += "<div><h3>" + model.name + "</h3><p>" + model.description + "</p></div>";
-        });
-        tireModelsElement.innerHTML = html;
-    }
-
-    displayTireModels();
-
+  
     function displayGoogleMapsReviews() {
         // Replace 'YOUR_PLACE_ID' with your actual place ID
         const placeId = 'YOUR_PLACE_ID';
