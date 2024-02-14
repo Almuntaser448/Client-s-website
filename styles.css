@@ -231,7 +231,7 @@ nav a:hover {
     display: flex;
     flex-direction: column;
 }
-.tables-container {
+.table-container {
     display: flex;
     margin: 5%;
     background-color: #c2463a; /* Background color for both tables */
@@ -239,7 +239,12 @@ nav a:hover {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add shadow to the table container */
     overflow: hidden; /* Ensure overflow is hidden to maintain rounded corners */
 }
-
+.tables-container {
+    display: flex;
+    margin: 5%;
+    border-radius: 10px;
+    overflow: hidden; /* Ensure overflow is hidden to maintain rounded corners */
+}
 
 .table {
     flex: 1;
@@ -356,3 +361,16 @@ nav a:hover {
         font-weight: bold;
         font-size: 20;
     }
+    .titleEntr{
+        font-weight: bold;
+        font-size: 45px;
+        text-align: center;
+        margin: 4%;
+color: darkred;
+    }
+        
+    .contentGeo li {
+        line-height: 1.6;
+        margin-bottom: 10px;
+    }
+    
