@@ -140,7 +140,6 @@ nav a:hover {
 
 .container {
     margin: 20px;
-    padding-bottom: 6%;
 }
 .social-icons {
     position: absolute;
@@ -361,11 +360,9 @@ nav a:hover {
     .logoMarques .brid {
         margin-top: 2%; /* Add extra margin to the top */
     }
-    main {
-        padding: 20px;
-    }
+
     
-    .contenGeo {
+    .contentGeo {
         margin-bottom: 30px;
     }
     
@@ -385,7 +382,7 @@ nav a:hover {
         margin-bottom: 20px;
     }
     
-    .contenGeo ul li::before {
+    .contetGeo ul li::before {
         content: '\2022';
         color: #c2463a;
         display: inline-block;
@@ -422,3 +419,17 @@ color: darkred;
         line-height: 1.6;
         margin-bottom: 10px;
     }
+    .image-container {
+        float: right;
+        margin-left: 20px !;
+    }
+    
+
+    
+    /* Adjust image size if necessary */
+    .image-container img {
+        width: 700px; /* Set width as needed */
+        height: auto; /* Maintain aspect ratio */
+
+    }
+    
