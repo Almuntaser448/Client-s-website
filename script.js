@@ -61,7 +61,29 @@ tableHtml += "</table>";
 fullTimetable.innerHTML = tableHtml;
 
     
-    
+document.addEventListener("DOMContentLoaded", function() {
+    // Get the text content of the element
+    var text = document.getElementById('dual-color-text').textContent;
+
+    // Clear the content of the element
+    document.getElementById('dual-color-text').innerHTML = '';
+
+    // Iterate over each character in the text
+    for (var i = 0; i < text.length; i++) {
+        // Create a span element
+        var span = document.createElement('span');
+
+        // Set the class for the span
+        span.className = 'letter';
+
+        // Set the text content of the span to the current character
+        span.textContent = text[i];
+
+        // Append the span to the element
+        document.getElementById('dual-color-text').appendChild(span);
+    }
+});
+
 
 };
 

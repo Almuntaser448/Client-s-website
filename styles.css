@@ -227,29 +227,32 @@ nav a:hover {
 .form-container label {
     background-color: #333; /* Change the background color of the label */
 }
-.containerPneus{
+.containerPneus {
     display: flex;
     flex-direction: column;
 }
-.table-container {
-    display: flex;
-    margin: 5%;
-    background-color: #c2463a; /* Background color for both tables */
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add shadow to the table container */
-    overflow: hidden; /* Ensure overflow is hidden to maintain rounded corners */
-}
+
 .tables-container {
     display: flex;
     margin: 5%;
     border-radius: 10px;
     overflow: hidden; /* Ensure overflow is hidden to maintain rounded corners */
+    flex: 1; /* Fill available space */
+}
+
+.table-container {
+    display: flex;
+    background-color: #c2463a; /* Background color for both tables */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add shadow to the table container */
+    overflow: hidden; /* Ensure overflow is hidden to maintain rounded corners */
+    flex: 1; /* Fill available space */
 }
 
 .table {
-    flex: 1;
     border-collapse: collapse; /* Collapse table borders */
     color: #fff; /* Text color */
+    width: 100%; /* Ensure table takes up full width */
 }
 
 .table-header {
@@ -258,36 +261,82 @@ nav a:hover {
     padding: 10px;
     font-weight: bold;
     font-size: 45px;
-
 }
 
 .table td, .table th {
     border: none; /* Remove cell borders */
     padding: 10px 10px;
-
 }
 
 .table-separator {
     width: 5px; /* Width of the separator */
     background-color: #fff; /* Color of the separator */
 }
-.rightAl{
+
+.rightAl {
     text-align: right;
-
 }
 
-.centerAl{
+.centerAl {
     text-align: center;
-
 }
 
-.leftAl{
+.leftAl {
     text-align: left;
     color: #ffff00;
-    }
-    .prix{
-        padding: 1%;
-    }
+}
+
+.prix {
+    padding: 1%;
+}
+.outlined-text {
+    position: relative;
+    display: inline-block;
+    font-size: 48px; /* Adjust font size */
+    font-weight: bold;
+    color: #fff; /* Fallback color */
+    text-shadow: 
+        -2px -2px 0 #c2463a;,  
+        2px -2px 0 #c2463a;,  
+        -2px 2px 0 #c2463a;,  
+        2px 2px 0 #c2463a;; /* Outline thickness and color */
+}
+
+.outlined-text::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #c2463a;; /* Outline color */
+    z-index: -1;
+}
+.forpne{
+    position: absolute;
+    top:  65vh;
+    left: 18vw;}
+.formec{
+    position: absolute;
+    top: 65vh;
+    left: 67vw;
+}
+
+.table-2 {
+    border-collapse: collapse; /* Collapse table borders */
+    color: #fff; /* Text color */
+    background-color: #c2463a;
+    border-radius: 10px;
+    margin-left: 20%;
+    width: 30%; /* Minimum width to prevent it from shrinking too much */
+}
+.table-2 .rightAl,.table-2 .centerAl  {
+    text-align:left;
+    padding: 2%;
+}
+   .table-header-2-s{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: #ffff00;
+        }
     .logoMarques {
         display: flex;
         justify-content: space-around; /* Horizontally distribute images */
@@ -373,4 +422,3 @@ color: darkred;
         line-height: 1.6;
         margin-bottom: 10px;
     }
-    
