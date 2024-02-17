@@ -114,7 +114,7 @@ label::after {
     font-style: italic;
     font-size: 45px;
     white-space: nowrap;
-    left: -50%;
+    left: -27%;
     color:#fff;
 }
 
@@ -218,6 +218,8 @@ nav a:hover {
     cursor: pointer;
     background-color: #d50000; /* Red color for submit button */
     transition: background-color 0.3s; /* Smooth transition for background color */
+    font-size: 35px;
+    font-weight: bold;
 }
 
 .form-container input[type="submit"]:hover {
@@ -245,13 +247,15 @@ nav a:hover {
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add shadow to the table container */
     overflow: hidden; /* Ensure overflow is hidden to maintain rounded corners */
-    flex: 1; /* Fill available space */
-}
+    flex: 1;
+  
+} 
 
 .table {
     border-collapse: collapse; /* Collapse table borders */
     color: #fff; /* Text color */
     width: 100%; /* Ensure table takes up full width */
+
 }
 
 .table-header {
@@ -311,20 +315,31 @@ nav a:hover {
 }
 .forpne{
     position: absolute;
-    top:  65vh;
-    left: 18vw;}
+    top:  59vh;
+    left: 6vw;}
 .formec{
     position: absolute;
-    top: 65vh;
-    left: 67vw;
+    top: 59vh;
+    left: 69vw;
 }
-
+.forpnen{
+  position: absolute;
+  top: 59vh;
+  left: 38vw;
+}
+.monPn{
+  position: absolute;
+  top: 126vh;
+  left: 38vw;
+}
 .table-2 {
     border-collapse: collapse; /* Collapse table borders */
     color: #fff; /* Text color */
     background-color: #c2463a;
     border-radius: 10px;
-    margin-left: 20%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add shadow to the table container */
+    overflow: hidden; /* Ensure overflow is hidden to maintain rounded corners */
+  margin: 2%;
     width: 30%; /* Minimum width to prevent it from shrinking too much */
 }
 .table-2 .rightAl,.table-2 .centerAl  {
@@ -337,26 +352,57 @@ nav a:hover {
     color: #ffff00;
         }
     .logoMarques {
-        display: flex;
+      display: flex;
         justify-content: space-around; /* Horizontally distribute images */
         align-items: flex-start; /* Align images to the top */
         margin-top: 20px; /* Adjust margin as needed */
-        position: relative; /* Set container to relative positioning */
-    }
-    
-    .logoMarques img {
+position: absolute;  }
+    .logoMarquesup {
+      display: flex;
+        justify-content: space-around; /* Horizontally distribute images */
+        align-items: flex-start; /* Align images to the top */
+        margin-top: 20px; /* Adjust margin as needed */
+        top: 50%;
+position: absolute;  }
+    .logoMarques img ,.logoMarquesup img{
         width: 20%;
         height: auto;
         margin: 1%; /* Add margin around all images */
     }
-    
+.centerAl-2{
+  text-align: center;
+}
+.logoMarquesup .fal{
+  margin-top: -4%; /* Add extra margin to the top */
+  margin-left: 5%;
+  width: 20%;
+  height: auto;
+}.logoMarquesup .hank{
+  margin-top: -1%; /* Add extra margin to the top */
+width: 17%;
+height: auto;
+}.logoMarquesup .dun{
+  margin-top: -3%; /* Add extra margin to the top */
+  width: 17%;
+  height: auto;
+}.logoMarquesup .pir{
+  margin-top: -1%; /* Add extra margin to the top */
+width: 10%;
+height: auto;}
     /* Adjust margin for the 'good.png' image */
     .logoMarques .good {
-        margin-top: 3%; /* Add extra margin to the top */
+        margin-top: 2%; /* Add extra margin to the top */
     }
     .logoMarques .mich {
-        margin-top: 1%; /* Add extra margin to the top */
+        margin-top: -1%; /* Add extra margin to the top */
+        width: 20%;
+        height: auto;
     }
+.logoMarques .cont {
+    margin-top: 1%; /* Add extra margin to the top */
+    width: 12%;
+    height: auto;
+}
     .logoMarques .brid {
         margin-top: 2%; /* Add extra margin to the top */
     }
@@ -424,12 +470,67 @@ color: darkred;
         margin-left: 20px !;
     }
     
+.image-container2 {
+    float: left;
+    margin-left: 20px !;
+    margin-right: 10px;
+}
 
     
     /* Adjust image size if necessary */
     .image-container img {
-        width: 700px; /* Set width as needed */
+        width: 600px; /* Set width as needed */
         height: auto; /* Maintain aspect ratio */
 
     }
-    
+.heures{
+margin:2%;  
+}
+.address{
+  background-color: rgba(195, 27, 27, 50%);
+  top: 41%;
+  font-family:'Times New Roman', Times, serif;
+  font-style: italic;
+  font-size: 25px;
+  white-space: nowrap;
+  padding: 2.5%;
+  border-radius: 5px;
+  display: inline-block;
+  left: 34%;
+  text-align: center;
+  width: 24%;
+  max-width: 500px;
+  position: absolute;
+  margin: 20px;
+  border: 5px solid black
+}.address .igeo {
+  width: 5%;
+  height: auto;
+}
+.address .geoAc:hover ,.address .telAc:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.address .itel{
+  width: 7%;
+  height: auto;
+}
+.montage{
+  font-size: 18px;
+display: flex;
+background-color: #c2463a; /* Background color for both tables */
+border-radius: 10px;
+width: 50%;
+margin-left: 20%;
+padding: 4%;
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add shadow to the table container */
+overflow: hidden; /* Ensure overflow is hidden to maintain rounded corners */
+flex: 1;
+text-align: center;
+}
+.prixM{
+color: yellow;
+}
+.mont{
+  margin-left: 4%;}

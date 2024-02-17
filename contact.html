@@ -16,7 +16,7 @@
     }
     .btn {
         display: inline-block;
-        padding: 10px 20px;
+        padding: 30px 50px;
         background-color: #d50000;
         color: #fff;
         text-decoration: none;
@@ -25,7 +25,11 @@
         cursor: pointer;
         border: none;
         outline: none;
+        font-size: 25px;
     }
+    .btn:hover{
+        cursor: pointer;
+        text-decoration: underline;}
     .contact-form {
         display: none;
         margin-top: 20px;
@@ -47,6 +51,25 @@
         border-radius: 5px;
         cursor: pointer;
     }
+    .logoMarquesup .fal{
+        margin-top: 7%; /* Add extra margin to the top */
+        margin-left: -1%;
+        width: 20%;
+        height: auto;
+    }.logoMarquesup .hank{
+        margin-top: 10%; /* Add extra margin to the top */
+        width: 17%;
+        height: auto;
+    }.logoMarquesup .dun{
+        margin-top: 8%; /* Add extra margin to the top */
+        width: 17%;
+        height: auto;
+    }.logoMarquesup .pir{
+        margin-top: 10%; /* Add extra margin to the top */
+        width: 10%;
+        height: auto;}
+    .logoMarquesup {
+        top: 60%;}
 </style>
 </head>
 <body>
@@ -75,7 +98,7 @@
 
     <nav>
         <a href="index.html">Accueil</a>
-        <a href="pneus.html">Modèles de Pneus</a>
+        <a href="pneus.html">Nos prix</a>
         <a href="devis.html">Demander une devis</a>
         <a href="promotion.html">Promotions </a>
         <a href="geometrie.html">Géometrie</a>
@@ -84,15 +107,21 @@
         <a href="contact.html">Contact</a>
 
     </nav>
+
 <div class="container">
-    <h2>Contactez-Nous</h2>
+    <h1>Contactez-Nous</h1>
     <button class="btn" onclick="openTelephone()">Appelez-nous</button>
 
     <button class="btn" onclick="openMailTo()">Envoyer un email</button>
 
 </div>
-
-
+    <div class="logoMarquesup">
+        <img class="fal" src="mich.png" alt="Pneu">
+        <img class="hank" src="hank.png" alt="Pneu">
+        <img class="dun" src="cont.png" alt="Pneu">
+        <img class="pir" src="pir.png" alt="Pneu">
+    </div>
 <script src="script.js"></script>
+
 </body>
 </html>

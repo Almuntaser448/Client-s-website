@@ -61,28 +61,6 @@ tableHtml += "</table>";
 fullTimetable.innerHTML = tableHtml;
 
     
-document.addEventListener("DOMContentLoaded", function() {
-    // Get the text content of the element
-    var text = document.getElementById('dual-color-text').textContent;
-
-    // Clear the content of the element
-    document.getElementById('dual-color-text').innerHTML = '';
-
-    // Iterate over each character in the text
-    for (var i = 0; i < text.length; i++) {
-        // Create a span element
-        var span = document.createElement('span');
-
-        // Set the class for the span
-        span.className = 'letter';
-
-        // Set the text content of the span to the current character
-        span.textContent = text[i];
-
-        // Append the span to the element
-        document.getElementById('dual-color-text').appendChild(span);
-    }
-});
 
 
 };
@@ -92,6 +70,9 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
 
+function openGeo() {
+    window.open('https://www.google.com/maps/dir//L\'usine+du+Pneu+19+Rte+de+Calais+95360+Montmagny/@48.9736701,2.3653314,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0x47e669719ca5e6a5:0x51ebc26b4af304b8!2m2!1d2.3653314!2d48.9736701?entry=ttu', '_blank');
+}
 
 
     function openMailTo() {
