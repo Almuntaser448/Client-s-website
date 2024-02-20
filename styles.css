@@ -409,6 +409,7 @@ height: auto;}
 
     
     .contentGeo {
+        margin-left: 1%;
         margin-bottom: 30px;
     }
     
@@ -534,3 +535,885 @@ color: yellow;
 }
 .mont{
   margin-left: 4%;}
+
+
+
+  .containerCon {
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+}
+.btn {
+    display: inline-block;
+    padding: 30px 50px;
+    background-color: #d50000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-size: 25px;
+}
+.btn:hover{
+    cursor: pointer;
+    text-decoration: underline;}
+
+.logoMarquesupCon .fal{
+    margin-top: 7%; /* Add extra margin to the top */
+    margin-left: -1%;
+    width: 20%;
+    height: auto;
+}.logoMarquesupCon .hank{
+    margin-top: 10%; /* Add extra margin to the top */
+    width: 17%;
+    height: auto;
+}.logoMarquesupCon .dun{
+    margin-top: 8%; /* Add extra margin to the top */
+    width: 17%;
+    height: auto;
+}.logoMarquesupCon .pir{
+    margin-top: 10%; /* Add extra margin to the top */
+    width: 10%;
+    height: auto;}
+.logoMarquesupCon {
+    display: flex;
+    justify-content: space-around; /* Horizontally distribute images */
+    align-items: flex-start; /* Align images to the top */
+    margin-top: 20px; /* Adjust margin as needed */
+}
+
+
+/* Large Desktop Screens */
+@media screen and (min-width: 1920px) {
+    .address {
+        top: 3vh;
+        font-size: 20px;
+      }
+      .slogan{
+        font-size: 42px;
+        left: -40%;
+
+    }
+    .logoMarques {
+          margin-top: 30px; /* Adjust margin as needed */
+  }
+      .logoMarquesup {
+          top: 47%;
+ }
+  .forpne{
+    top: 54vh;
+    left: 9vw;}
+.formec{
+    top: 54vh;
+    left: 72vw;
+}
+.forpnen{
+  top: 54vh;
+  left: 41vw;
+}
+.monPn{
+  top: 110vh;
+  left: 42vw;
+}    
+.outlined-text{
+    font-size: 38px;
+}
+.btn{
+    padding: 20px 40px;
+    font-size: 20px;
+}
+.logoMarquesupCon .fal{
+    margin-top: 0.5%;
+    width: 27%;
+    height: auto;
+}.logoMarquesupCon .hank{
+    margin-top: 4%;
+    width: 24%;
+    height: auto;
+}.logoMarquesupCon .dun{
+    margin-top: 1%;
+    width: 24%;
+    height: auto;
+}.logoMarquesupCon .pir{
+    margin-top: 3%;
+    width: 17%;
+    height: auto;}
+.logoMarquesupCon {
+    margin-top: 10vh;}
+  }
+  
+
+
+  @media screen and (min-width: 1600px) and (max-width: 1919px) {
+    .address {
+        top: 38.5%;
+        font-size: 20px;
+      }
+      .slogan{
+        font-size: 42px;
+        left: -39%;
+
+    }
+    .logoMarques {
+          margin-top: 30px; /* Adjust margin as needed */
+  }
+      .logoMarquesup {
+          top: 47%;
+ }
+  .forpne{
+    top: 58vh;
+    left: 7vw;}
+.formec{
+    top: 58vh;
+    left: 69vw;
+}
+.forpnen{
+  top: 58vh;
+  left: 39vw;
+}
+.monPn{
+  top: 117vh;
+  left: 40vw;
+}    
+.outlined-text{
+    font-size: 38px;
+}
+.btn{
+    padding: 20px 40px;
+    font-size: 20px;
+}
+.logoMarquesupCon .fal{
+    margin-top: 0.5%;
+    width: 27%;
+    height: auto;
+}.logoMarquesupCon .hank{
+    margin-top: 4%;
+    width: 24%;
+    height: auto;
+}.logoMarquesupCon .dun{
+    margin-top: 1%;
+    width: 24%;
+    height: auto;
+}.logoMarquesupCon .pir{
+    margin-top: 3%;
+    width: 17%;
+    height: auto;}
+.logoMarquesupCon {
+    margin-top: 10vh;}
+  }
+  
+  @media screen and (min-width: 1536px) and (max-width: 1599px) {
+    .address {
+        top: 39.5%;
+        font-size: 20px;
+      }
+      .slogan{
+        font-size: 42px;
+        left: -44%;
+
+    }
+    .logoMarques {
+          margin-top: 30px; /* Adjust margin as needed */
+  }
+      .logoMarquesup {
+          top: 47%;
+ }
+  .forpne{
+    top: 57vh;
+    left: 6vw;}
+.formec{
+    top: 57vh;
+    left: 69vw;
+}
+.forpnen{
+  top: 57vh;
+  left: 38vw;
+}
+.monPn{
+  top: 120vh;
+  left: 38vw;
+}    
+.outlined-text{
+    font-size: 38px;
+}
+.btn{
+    padding: 20px 40px;
+    font-size: 20px;
+}
+.logoMarquesupCon .fal{
+    margin-top: 0.5%;
+    width: 27%;
+    height: auto;
+}.logoMarquesupCon .hank{
+    margin-top: 4%;
+    width: 24%;
+    height: auto;
+}.logoMarquesupCon .dun{
+    margin-top: 1%;
+    width: 24%;
+    height: auto;
+}.logoMarquesupCon .pir{
+    margin-top: 3%;
+    width: 17%;
+    height: auto;}
+.logoMarquesupCon {
+    margin-top: 10vh;}
+  }
+  
+
+
+
+
+  @media screen and (min-width: 1440px) and (max-width: 1535px) {
+    .address {
+        top: 38%;
+        font-size: 20px;
+      }
+      .slogan{
+        font-size: 42px;
+        left: -44%;
+
+    }
+    .logoMarques {
+          margin-top: 30px; /* Adjust margin as needed */
+  }
+      .logoMarquesup {
+          top: 47%;
+ }
+  .forpne{
+    top: 55vh;
+    left: 6vw;}
+.formec{
+    top: 55vh;
+    left: 69vw;
+}
+.forpnen{
+  top: 55vh;
+  left: 38vw;
+}
+.monPn{
+  top: 112vh;
+  left: 38vw;
+}    
+.outlined-text{
+    font-size: 38px;
+}
+.btn{
+    padding: 20px 40px;
+    font-size: 20px;
+}
+.logoMarquesupCon .fal{
+    margin-top: 0.5%;
+    width: 27%;
+    height: auto;
+}.logoMarquesupCon .hank{
+    margin-top: 4%;
+    width: 24%;
+    height: auto;
+}.logoMarquesupCon .dun{
+    margin-top: 1%;
+    width: 24%;
+    height: auto;
+}.logoMarquesupCon .pir{
+    margin-top: 3%;
+    width: 17%;
+    height: auto;}
+.logoMarquesupCon {
+    margin-top: 10vh;}
+  }
+  
+
+
+
+  
+  @media screen and (min-width: 1366px) and (max-width: 1439px) {
+    .address {
+        top: 43%;
+        font-size: 20px;
+      }
+      .slogan{
+        font-size: 42px;
+        left: -46%;
+
+    }
+    .logoMarques {
+          margin-top: 30px; /* Adjust margin as needed */
+  }
+      .logoMarquesup {
+          top: 55%;
+ }
+  .forpne{
+    top: 62vh;
+    left: 6vw;}
+.formec{
+    top: 62vh;
+    left: 69vw;
+}
+.forpnen{
+  top: 62vh;
+  left: 38vw;
+}
+.monPn{
+  top: 130vh;
+  left: 38vw;
+}    
+.outlined-text{
+    font-size: 35px;
+}
+.btn{
+    padding: 20px 40px;
+    font-size: 20px;
+}
+.logoMarquesupCon .fal{
+    margin-top: 0.5%;
+    width: 27%;
+    height: auto;
+}.logoMarquesupCon .hank{
+    margin-top: 4%;
+    width: 24%;
+    height: auto;
+}.logoMarquesupCon .dun{
+    margin-top: 1%;
+    width: 24%;
+    height: auto;
+}.logoMarquesupCon .pir{
+    margin-top: 3%;
+    width: 17%;
+    height: auto;}
+.logoMarquesupCon {
+    margin-top: 10vh;}
+  }
+  
+
+
+
+
+  @media screen and (min-width: 1280px) and (max-width: 1365px) {
+    .address {
+        top: 40vh;
+        font-size: 20px;
+      }
+      .slogan{
+        font-size: 42px;
+        left: -60%;
+
+    }
+    .logoMarques {
+          margin-top: 30px; /* Adjust margin as needed */
+  }
+      .logoMarquesup {
+          top: 55%;
+ }
+  .forpne{
+    top: 60vh;
+    left: 7vw;}
+.formec{
+    top: 60vh;
+    left: 69vw;
+}
+
+.forpnen{
+  top: 60vh;
+  left: 38vw;
+}
+.monPn{
+  top: 145vh;
+  left: 38vw;
+}    
+.outlined-text{
+    font-size: 30px;
+}
+.table td, .table th {
+
+    padding: 10px 0;
+}
+
+.btn{
+    padding: 20px 40px;
+    font-size: 20px;
+}
+.logoMarquesupCon .fal{
+    margin-top: 0.5%;
+    width: 27%;
+    height: auto;
+}.logoMarquesupCon .hank{
+    margin-top: 4%;
+    width: 24%;
+    height: auto;
+}.logoMarquesupCon .dun{
+    margin-top: 1%;
+    width: 24%;
+    height: auto;
+}.logoMarquesupCon .pir{
+    margin-top: 3%;
+    width: 17%;
+    height: auto;}
+.logoMarquesupCon {
+    margin-top: 10vh;}
+  }
+
+
+
+
+  
+  @media screen and (min-width: 1024px) and (max-width: 1279px) {
+    .social-icons img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+    .address {
+        top: 39vh;
+        font-size: 15px;
+        left: 50vw;
+      }
+
+    .black-box {
+        padding: 5px;
+        font-size: 40px;
+
+    }
+    .slogan{
+        top: 150%;
+        font-size: 25px;
+        left: -30%;
+
+    }
+    .du-pneu {
+
+        padding: 5px;
+        font-size: 40px;
+
+    }
+    
+    
+    .montmagny {
+        top: 86%;
+        font-size: 40px;
+    }
+    
+    .logoMarques {
+          margin-top: 30px; /* Adjust margin as needed */
+  }
+      .logoMarquesup {
+          top: 50%;
+ }
+  .forpne{
+    top: 57vh;
+    left: 6vw;}
+.formec{
+    top: 57vh;
+    left: 69vw;
+}
+.forpnen{
+  top: 57vh;
+  left: 38vw;
+}
+.monPn{
+  top: 140vh;
+  left: 38vw;
+}    
+.outlined-text{
+    font-size: 25px;
+}
+.table td, .table th {
+
+    padding: 10px 0;
+}
+
+.btn{
+    padding: 20px 40px;
+    font-size: 20px;
+}
+.logoMarquesupCon .fal{
+    margin-top: 0.5%;
+    width: 27%;
+    height: auto;
+}.logoMarquesupCon .hank{
+    margin-top: 4%;
+    width: 24%;
+    height: auto;
+}.logoMarquesupCon .dun{
+    margin-top: 1%;
+    width: 24%;
+    height: auto;
+}.logoMarquesupCon .pir{
+    margin-top: 3%;
+    width: 17%;
+    height: auto;}
+.logoMarquesupCon {
+    margin-top: 10vh;}
+  }
+  
+
+
+
+  @media screen and (min-width: 962px) and (max-width: 1023px) {
+    .address {
+        top: 37.5vh;
+        font-size: 20px;
+      }
+      .slogan{
+        font-size: 42px;
+        left: -40%;
+
+    }
+    .logoMarques {
+          margin-top: 30px; /* Adjust margin as needed */
+  }
+      .logoMarquesup {
+          top: 47%;
+ }
+  .forpne{
+    top: 55vh;
+    left: 6vw;}
+.formec{
+    top: 55vh;
+    left: 69vw;
+}
+.forpnen{
+  top: 55vh;
+  left: 38vw;
+}
+.monPn{
+  top: 112vh;
+  left: 38vw;
+}    
+.outlined-text{
+    font-size: 38px;
+}
+.btn{
+    padding: 20px 40px;
+    font-size: 20px;
+}
+.logoMarquesupCon .fal{
+    margin-top: 0.5%;
+    width: 27%;
+    height: auto;
+}.logoMarquesupCon .hank{
+    margin-top: 4%;
+    width: 24%;
+    height: auto;
+}.logoMarquesupCon .dun{
+    margin-top: 1%;
+    width: 24%;
+    height: auto;
+}.logoMarquesupCon .pir{
+    margin-top: 3%;
+    width: 17%;
+    height: auto;}
+.logoMarquesupCon {
+    margin-top: 10vh;}
+  }
+  
+
+
+
+  @media screen and (min-width: 810px) and (max-width: 961px) {
+    .address {
+        top: 37.5vh;
+        font-size: 20px;
+      }
+      .slogan{
+        font-size: 42px;
+        left: -40%;
+
+    }
+    .logoMarques {
+          margin-top: 30px; /* Adjust margin as needed */
+  }
+      .logoMarquesup {
+          top: 47%;
+ }
+  .forpne{
+    top: 55vh;
+    left: 6vw;}
+.formec{
+    top: 55vh;
+    left: 69vw;
+}
+.forpnen{
+  top: 55vh;
+  left: 38vw;
+}
+.monPn{
+  top: 112vh;
+  left: 38vw;
+}    
+.outlined-text{
+    font-size: 38px;
+}
+.btn{
+    padding: 20px 40px;
+    font-size: 20px;
+}
+.logoMarquesupCon .fal{
+    margin-top: 0.5%;
+    width: 27%;
+    height: auto;
+}.logoMarquesupCon .hank{
+    margin-top: 4%;
+    width: 24%;
+    height: auto;
+}.logoMarquesupCon .dun{
+    margin-top: 1%;
+    width: 24%;
+    height: auto;
+}.logoMarquesupCon .pir{
+    margin-top: 3%;
+    width: 17%;
+    height: auto;}
+.logoMarquesupCon {
+    margin-top: 10vh;}
+  }
+  
+
+
+
+  /* Medium-sized Devices */
+  @media screen and (min-width: 768px) and (max-width: 809px) {
+    .address {
+        top: 37.5vh;
+        font-size: 20px;
+      }
+      .slogan{
+        font-size: 42px;
+        left: -40%;
+
+    }
+    .logoMarques {
+          margin-top: 30px; /* Adjust margin as needed */
+  }
+      .logoMarquesup {
+          top: 47%;
+ }
+  .forpne{
+    top: 55vh;
+    left: 6vw;}
+.formec{
+    top: 55vh;
+    left: 69vw;
+}
+.forpnen{
+  top: 55vh;
+  left: 38vw;
+}
+.monPn{
+  top: 112vh;
+  left: 38vw;
+}    
+.outlined-text{
+    font-size: 38px;
+}
+.btn{
+    padding: 20px 40px;
+    font-size: 20px;
+}
+.logoMarquesupCon .fal{
+    margin-top: 0.5%;
+    width: 27%;
+    height: auto;
+}.logoMarquesupCon .hank{
+    margin-top: 4%;
+    width: 24%;
+    height: auto;
+}.logoMarquesupCon .dun{
+    margin-top: 1%;
+    width: 24%;
+    height: auto;
+}.logoMarquesupCon .pir{
+    margin-top: 3%;
+    width: 17%;
+    height: auto;}
+.logoMarquesupCon {
+    margin-top: 10vh;}
+  }
+  
+
+
+
+  /* Tablets */
+  @media screen and (min-width: 414px) and (max-width: 767px) {
+    .address {
+        top: 37.5vh;
+        font-size: 20px;
+      }
+      .slogan{
+        font-size: 42px;
+        left: -40%;
+
+    }
+    .logoMarques {
+          margin-top: 30px; /* Adjust margin as needed */
+  }
+      .logoMarquesup {
+          top: 47%;
+ }
+  .forpne{
+    top: 55vh;
+    left: 6vw;}
+.formec{
+    top: 55vh;
+    left: 69vw;
+}
+.forpnen{
+  top: 55vh;
+  left: 38vw;
+}
+.monPn{
+  top: 112vh;
+  left: 38vw;
+}    
+.outlined-text{
+    font-size: 38px;
+}
+.btn{
+    padding: 20px 40px;
+    font-size: 20px;
+}
+.logoMarquesupCon .fal{
+    margin-top: 0.5%;
+    width: 27%;
+    height: auto;
+}.logoMarquesupCon .hank{
+    margin-top: 4%;
+    width: 24%;
+    height: auto;
+}.logoMarquesupCon .dun{
+    margin-top: 1%;
+    width: 24%;
+    height: auto;
+}.logoMarquesupCon .pir{
+    margin-top: 3%;
+    width: 17%;
+    height: auto;}
+.logoMarquesupCon {
+    margin-top: 10vh;}
+  }
+  
+
+
+
+
+  /* Other */
+  @media screen and (min-width: 390px) and (max-width: 413px) {
+    .address {
+        top: 37.5vh;
+        font-size: 20px;
+      }
+      .slogan{
+        font-size: 42px;
+        left: -40%;
+
+    }
+    .logoMarques {
+          margin-top: 30px; /* Adjust margin as needed */
+  }
+      .logoMarquesup {
+          top: 47%;
+ }
+  .forpne{
+    top: 55vh;
+    left: 6vw;}
+.formec{
+    top: 55vh;
+    left: 69vw;
+}
+.forpnen{
+  top: 55vh;
+  left: 38vw;
+}
+.monPn{
+  top: 112vh;
+  left: 38vw;
+}    
+.outlined-text{
+    font-size: 38px;
+}
+.btn{
+    padding: 20px 40px;
+    font-size: 20px;
+}
+.logoMarquesupCon .fal{
+    margin-top: 0.5%;
+    width: 27%;
+    height: auto;
+}.logoMarquesupCon .hank{
+    margin-top: 4%;
+    width: 24%;
+    height: auto;
+}.logoMarquesupCon .dun{
+    margin-top: 1%;
+    width: 24%;
+    height: auto;
+}.logoMarquesupCon .pir{
+    margin-top: 3%;
+    width: 17%;
+    height: auto;}
+.logoMarquesupCon {
+    margin-top: 10vh;}
+  }
+  
+
+
+
+  /* Other */
+  @media screen and (max-width: 389px) {
+    .address {
+        top: 37.5vh;
+        font-size: 20px;
+      }
+      .slogan{
+        font-size: 42px;
+        left: -40%;
+
+    }
+    .logoMarques {
+          margin-top: 30px; /* Adjust margin as needed */
+  }
+      .logoMarquesup {
+          top: 47%;
+ }
+  .forpne{
+    top: 55vh;
+    left: 6vw;}
+.formec{
+    top: 55vh;
+    left: 69vw;
+}
+.forpnen{
+  top: 55vh;
+  left: 38vw;
+}
+.monPn{
+  top: 112vh;
+  left: 38vw;
+}    
+.outlined-text{
+    font-size: 38px;
+}
+.btn{
+    padding: 20px 40px;
+    font-size: 20px;
+}
+.logoMarquesupCon .fal{
+    margin-top: 0.5%;
+    width: 27%;
+    height: auto;
+}.logoMarquesupCon .hank{
+    margin-top: 4%;
+    width: 24%;
+    height: auto;
+}.logoMarquesupCon .dun{
+    margin-top: 1%;
+    width: 24%;
+    height: auto;
+}.logoMarquesupCon .pir{
+    margin-top: 3%;
+    width: 17%;
+    height: auto;}
+.logoMarquesupCon {
+    margin-top: 10vh;}
+  }
