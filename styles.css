@@ -517,24 +517,28 @@ margin:2%;
   width: 7%;
   height: auto;
 }
-.montage{
-  font-size: 18px;
+.montageContainer{
 display: flex;
+}
+.montage{
+  font-size: 35px;
+  font-weight: bold;
+  display: flex;    
 background-color: #c2463a; /* Background color for both tables */
 border-radius: 10px;
-width: 50%;
-margin-left: 20%;
-padding: 4%;
+width: 30%;
+margin-left: 10%;
+padding: 2%;
 box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add shadow to the table container */
 overflow: hidden; /* Ensure overflow is hidden to maintain rounded corners */
-flex: 1;
 text-align: center;
+flex-direction: column;
 }
 .prixM{
 color: yellow;
 }
 .mont{
-  margin-left: 4%;}
+  margin-bottom: 2%;}
 
 
 
@@ -615,7 +619,7 @@ color: yellow;
 }
 .monPn{
   top: 110vh;
-  left: 42vw;
+  left: 53vw;
 }    
 .outlined-text{
     font-size: 38px;
@@ -675,7 +679,7 @@ color: yellow;
 }
 .monPn{
   top: 117vh;
-  left: 40vw;
+  left: 60vw;
 }    
 .outlined-text{
     font-size: 38px;
@@ -733,7 +737,7 @@ color: yellow;
 }
 .monPn{
   top: 120vh;
-  left: 38vw;
+  left: 58vw;
 }    
 .outlined-text{
     font-size: 38px;
@@ -795,7 +799,7 @@ color: yellow;
 }
 .monPn{
   top: 112vh;
-  left: 38vw;
+  left: 60vw;
 }    
 .outlined-text{
     font-size: 38px;
@@ -857,7 +861,7 @@ color: yellow;
 }
 .monPn{
   top: 130vh;
-  left: 38vw;
+  left: 64vw;
 }    
 .outlined-text{
     font-size: 35px;
@@ -920,7 +924,7 @@ color: yellow;
 }
 .monPn{
   top: 145vh;
-  left: 38vw;
+  left: 70vw;
 }    
 .outlined-text{
     font-size: 30px;
@@ -964,6 +968,11 @@ color: yellow;
         height: 50px;
         border-radius: 50%;
     }
+    .tables-container {
+margin-left: 0.5%;
+margin-right: 0.5%;
+    }
+    
     .address {
         top: 39vh;
         font-size: 15px;
@@ -987,7 +996,7 @@ color: yellow;
         font-size: 40px;
 
     }
-    
+
     
     .montmagny {
         top: 86%;
@@ -1013,7 +1022,7 @@ color: yellow;
 }
 .monPn{
   top: 140vh;
-  left: 38vw;
+  left: 78vw;
 }    
 .outlined-text{
     font-size: 25px;
@@ -1021,6 +1030,9 @@ color: yellow;
 .table td, .table th {
 
     padding: 10px 0;
+}
+.table .centerAl{
+    text-align: center;
 }
 
 .btn{
@@ -1051,6 +1063,11 @@ color: yellow;
 
 
   @media screen and (min-width: 962px) and (max-width: 1023px) {
+    .tables-container {
+        margin-left: 0;
+        margin-right: 0;
+            }
+            
     .address {
         top: 37.5vh;
         font-size: 20px;
