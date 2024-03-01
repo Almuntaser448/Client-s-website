@@ -138,6 +138,25 @@ nav a:hover {
 
 
 
+.nav-links {
+    display: none;
+}
+
+/* Show the hamburger menu */
+.hamburger-menu {
+    display: block;
+    cursor: pointer;
+}
+
+/* Styles for the hamburger icon bars */
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #000;
+    margin: 5px 0;
+}
+
+
 .container {
     margin: 20px;
 }
@@ -587,6 +606,25 @@ color: yellow;
     align-items: flex-start; /* Align images to the top */
     margin-top: 20px; /* Adjust margin as needed */
 }
+
+@media screen and (max-width: 890px) {
+    /* Hide the hamburger menu by default */
+    .hamburger-menu {
+        display: none;
+    }
+    
+    /* Show the navigation links */
+    .nav-links {
+        display: block;
+        text-align: center; /* Center the links */
+    }
+    
+    /* Style the navigation links for smaller screens */
+    .nav-links li {
+        margin-bottom: 10px; /* Add space between links */
+    }
+}
+
 
 
 /* Large Desktop Screens */
@@ -1063,44 +1101,178 @@ margin-right: 0.5%;
 
 
   @media screen and (min-width: 962px) and (max-width: 1023px) {
+    .social-icons img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
     .tables-container {
-        margin-left: 0;
-        margin-right: 0;
-            }
-            
+margin-left: 0.5%;
+margin-right: 0.5%;
+    }
+    
     .address {
-        top: 37.5vh;
-        font-size: 20px;
+        top: 50vh;
+        font-size: 15px;
+        left: 50vw;
       }
-      .slogan{
-        font-size: 42px;
-        left: -40%;
+
+    .black-box {
+        padding: 5px;
+        font-size: 40px;
 
     }
+    .slogan{
+        top: 150%;
+        font-size: 25px;
+        left: -37%;
+
+    }
+    .du-pneu {
+
+        padding: 5px;
+        font-size: 40px;
+
+    }
+
+    
+    .montmagny {
+        top: 86%;
+        font-size: 40px;
+    }
+    
     .logoMarques {
           margin-top: 30px; /* Adjust margin as needed */
   }
       .logoMarquesup {
-          top: 47%;
+          top: 62%;
  }
   .forpne{
-    top: 55vh;
-    left: 6vw;}
+    top: 70vh;
+    left: 3vw;}
 .formec{
-    top: 55vh;
-    left: 69vw;
+    top: 70vh;
+    left: 71vw;
 }
 .forpnen{
-  top: 55vh;
+  top: 70vh;
   left: 38vw;
 }
 .monPn{
-  top: 112vh;
-  left: 38vw;
+  top: 178vh;
+  left: 79vw;
 }    
 .outlined-text{
-    font-size: 38px;
+    font-size: 25px;
 }
+.table td, .table th {
+
+    padding: 10px 0;
+}
+.table .centerAl{
+    text-align: center;
+}
+
+.btn{
+    padding: 20px 40px;
+    font-size: 20px;
+}
+.logoMarquesupCon .fal{
+    margin-top: 0.5%;
+    width: 27%;
+    height: auto;
+}.logoMarquesupCon .hank{
+    margin-top: 4%;
+    width: 24%;
+    height: auto;
+}.logoMarquesupCon .dun{
+    margin-top: 1%;
+    width: 24%;
+    height: auto;
+}.logoMarquesupCon .pir{
+    margin-top: 3%;
+    width: 17%;
+    height: auto;}
+.logoMarquesupCon {
+    margin-top: 10vh;}
+  }
+  
+
+
+  @media screen and (min-width: 800px) and (max-width: 961px) { /*hamburger*/
+    .social-icons img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-top: 10%;
+    }
+    .tables-container {
+margin-left: 0.5%;
+margin-right: 0.5%;
+    }
+    
+    .address {
+        top: 39vh;
+        font-size: 15px;
+        left: 50vw;
+      }
+
+    .black-box {
+        padding: 5px;
+        font-size: 40px;
+
+    }
+    .slogan{
+        top: 150%;
+        font-size: 25px;
+        left: -30%;
+
+    }
+    .du-pneu {
+
+        padding: 5px;
+        font-size: 40px;
+
+    }
+
+    
+    .montmagny {
+        top: 86%;
+        font-size: 40px;
+    }
+    
+    .logoMarques {
+          margin-top: 30px; /* Adjust margin as needed */
+  }
+      .logoMarquesup {
+          top: 50%;
+ }
+  .forpne{
+    top: 57vh;
+    left: 6vw;}
+.formec{
+    top: 57vh;
+    left: 69vw;
+}
+.forpnen{
+  top: 57vh;
+  left: 38vw;
+}
+.monPn{
+  top: 140vh;
+  left: 78vw;
+}    
+.outlined-text{
+    font-size: 25px;
+}
+.table td, .table th {
+
+    padding: 10px 0;
+}
+.table .centerAl{
+    text-align: center;
+}
+
 .btn{
     padding: 20px 40px;
     font-size: 20px;
@@ -1128,40 +1300,79 @@ margin-right: 0.5%;
 
 
 
-  @media screen and (min-width: 810px) and (max-width: 961px) {
+  @media screen and (min-width: 768px) and (max-width: 799px) {
+    .social-icons img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+    .tables-container {
+margin-left: 0.5%;
+margin-right: 0.5%;
+    }
+    
     .address {
-        top: 37.5vh;
-        font-size: 20px;
+        top: 39vh;
+        font-size: 15px;
+        left: 50vw;
       }
-      .slogan{
-        font-size: 42px;
-        left: -40%;
+
+    .black-box {
+        padding: 5px;
+        font-size: 40px;
 
     }
+    .slogan{
+        top: 150%;
+        font-size: 25px;
+        left: -30%;
+
+    }
+    .du-pneu {
+
+        padding: 5px;
+        font-size: 40px;
+
+    }
+
+    
+    .montmagny {
+        top: 86%;
+        font-size: 40px;
+    }
+    
     .logoMarques {
           margin-top: 30px; /* Adjust margin as needed */
   }
       .logoMarquesup {
-          top: 47%;
+          top: 50%;
  }
   .forpne{
-    top: 55vh;
+    top: 57vh;
     left: 6vw;}
 .formec{
-    top: 55vh;
+    top: 57vh;
     left: 69vw;
 }
 .forpnen{
-  top: 55vh;
+  top: 57vh;
   left: 38vw;
 }
 .monPn{
-  top: 112vh;
-  left: 38vw;
+  top: 140vh;
+  left: 78vw;
 }    
 .outlined-text{
-    font-size: 38px;
+    font-size: 25px;
 }
+.table td, .table th {
+
+    padding: 10px 0;
+}
+.table .centerAl{
+    text-align: center;
+}
+
 .btn{
     padding: 20px 40px;
     font-size: 20px;
@@ -1189,103 +1400,79 @@ margin-right: 0.5%;
 
 
 
-  /* Medium-sized Devices */
-  @media screen and (min-width: 768px) and (max-width: 809px) {
-    .address {
-        top: 37.5vh;
-        font-size: 20px;
-      }
-      .slogan{
-        font-size: 42px;
-        left: -40%;
-
-    }
-    .logoMarques {
-          margin-top: 30px; /* Adjust margin as needed */
-  }
-      .logoMarquesup {
-          top: 47%;
- }
-  .forpne{
-    top: 55vh;
-    left: 6vw;}
-.formec{
-    top: 55vh;
-    left: 69vw;
-}
-.forpnen{
-  top: 55vh;
-  left: 38vw;
-}
-.monPn{
-  top: 112vh;
-  left: 38vw;
-}    
-.outlined-text{
-    font-size: 38px;
-}
-.btn{
-    padding: 20px 40px;
-    font-size: 20px;
-}
-.logoMarquesupCon .fal{
-    margin-top: 0.5%;
-    width: 27%;
-    height: auto;
-}.logoMarquesupCon .hank{
-    margin-top: 4%;
-    width: 24%;
-    height: auto;
-}.logoMarquesupCon .dun{
-    margin-top: 1%;
-    width: 24%;
-    height: auto;
-}.logoMarquesupCon .pir{
-    margin-top: 3%;
-    width: 17%;
-    height: auto;}
-.logoMarquesupCon {
-    margin-top: 10vh;}
-  }
-  
-
-
-
-  /* Tablets */
   @media screen and (min-width: 414px) and (max-width: 767px) {
+    .social-icons img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+    .tables-container {
+margin-left: 0.5%;
+margin-right: 0.5%;
+    }
+    
     .address {
-        top: 37.5vh;
-        font-size: 20px;
+        top: 39vh;
+        font-size: 15px;
+        left: 50vw;
       }
-      .slogan{
-        font-size: 42px;
-        left: -40%;
+
+    .black-box {
+        padding: 5px;
+        font-size: 40px;
 
     }
+    .slogan{
+        top: 150%;
+        font-size: 25px;
+        left: -30%;
+
+    }
+    .du-pneu {
+
+        padding: 5px;
+        font-size: 40px;
+
+    }
+
+    
+    .montmagny {
+        top: 86%;
+        font-size: 40px;
+    }
+    
     .logoMarques {
           margin-top: 30px; /* Adjust margin as needed */
   }
       .logoMarquesup {
-          top: 47%;
+          top: 50%;
  }
   .forpne{
-    top: 55vh;
+    top: 57vh;
     left: 6vw;}
 .formec{
-    top: 55vh;
+    top: 57vh;
     left: 69vw;
 }
 .forpnen{
-  top: 55vh;
+  top: 57vh;
   left: 38vw;
 }
 .monPn{
-  top: 112vh;
-  left: 38vw;
+  top: 140vh;
+  left: 78vw;
 }    
 .outlined-text{
-    font-size: 38px;
+    font-size: 25px;
 }
+.table td, .table th {
+
+    padding: 10px 0;
+}
+.table .centerAl{
+    text-align: center;
+}
+
 .btn{
     padding: 20px 40px;
     font-size: 20px;
@@ -1313,42 +1500,79 @@ margin-right: 0.5%;
 
 
 
-
-  /* Other */
   @media screen and (min-width: 390px) and (max-width: 413px) {
+    .social-icons img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+    .tables-container {
+margin-left: 0.5%;
+margin-right: 0.5%;
+    }
+    
     .address {
-        top: 37.5vh;
-        font-size: 20px;
+        top: 39vh;
+        font-size: 15px;
+        left: 50vw;
       }
-      .slogan{
-        font-size: 42px;
-        left: -40%;
+
+    .black-box {
+        padding: 5px;
+        font-size: 40px;
 
     }
+    .slogan{
+        top: 150%;
+        font-size: 25px;
+        left: -30%;
+
+    }
+    .du-pneu {
+
+        padding: 5px;
+        font-size: 40px;
+
+    }
+
+    
+    .montmagny {
+        top: 86%;
+        font-size: 40px;
+    }
+    
     .logoMarques {
           margin-top: 30px; /* Adjust margin as needed */
   }
       .logoMarquesup {
-          top: 47%;
+          top: 50%;
  }
   .forpne{
-    top: 55vh;
+    top: 57vh;
     left: 6vw;}
 .formec{
-    top: 55vh;
+    top: 57vh;
     left: 69vw;
 }
 .forpnen{
-  top: 55vh;
+  top: 57vh;
   left: 38vw;
 }
 .monPn{
-  top: 112vh;
-  left: 38vw;
+  top: 140vh;
+  left: 78vw;
 }    
 .outlined-text{
-    font-size: 38px;
+    font-size: 25px;
 }
+.table td, .table th {
+
+    padding: 10px 0;
+}
+.table .centerAl{
+    text-align: center;
+}
+
 .btn{
     padding: 20px 40px;
     font-size: 20px;
@@ -1376,41 +1600,82 @@ margin-right: 0.5%;
 
 
 
+
+
   /* Other */
-  @media screen and (max-width: 389px) {
+  @media screen and  (max-width: 389px) {
+    .social-icons img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+    .tables-container {
+margin-left: 0.5%;
+margin-right: 0.5%;
+    }
+    
     .address {
-        top: 37.5vh;
-        font-size: 20px;
+        top: 39vh;
+        font-size: 15px;
+        left: 50vw;
       }
-      .slogan{
-        font-size: 42px;
-        left: -40%;
+
+    .black-box {
+        padding: 5px;
+        font-size: 40px;
 
     }
+    .slogan{
+        top: 150%;
+        font-size: 25px;
+        left: -30%;
+
+    }
+    .du-pneu {
+
+        padding: 5px;
+        font-size: 40px;
+
+    }
+
+    
+    .montmagny {
+        top: 86%;
+        font-size: 40px;
+    }
+    
     .logoMarques {
           margin-top: 30px; /* Adjust margin as needed */
   }
       .logoMarquesup {
-          top: 47%;
+          top: 50%;
  }
   .forpne{
-    top: 55vh;
+    top: 57vh;
     left: 6vw;}
 .formec{
-    top: 55vh;
+    top: 57vh;
     left: 69vw;
 }
 .forpnen{
-  top: 55vh;
+  top: 57vh;
   left: 38vw;
 }
 .monPn{
-  top: 112vh;
-  left: 38vw;
+  top: 140vh;
+  left: 78vw;
 }    
 .outlined-text{
-    font-size: 38px;
+    font-size: 25px;
 }
+.table td, .table th {
+
+    padding: 10px 0;
+}
+.table .centerAl{
+    text-align: center;
+}
+
 .btn{
     padding: 20px 40px;
     font-size: 20px;
@@ -1434,3 +1699,5 @@ margin-right: 0.5%;
 .logoMarquesupCon {
     margin-top: 10vh;}
   }
+  
+
