@@ -138,23 +138,6 @@ nav a:hover {
 
 
 
-.nav-links {
-    display: none;
-}
-
-/* Show the hamburger menu */
-.hamburger-menu {
-    display: block;
-    cursor: pointer;
-}
-
-/* Styles for the hamburger icon bars */
-.bar {
-    width: 25px;
-    height: 3px;
-    background-color: #000;
-    margin: 5px 0;
-}
 
 
 .container {
@@ -347,9 +330,7 @@ nav a:hover {
   left: 38vw;
 }
 .monPn{
-  position: absolute;
-  top: 126vh;
-  left: 38vw;
+  left: 60%;
 }
 .table-2 {
     border-collapse: collapse; /* Collapse table borders */
@@ -376,13 +357,15 @@ nav a:hover {
         align-items: flex-start; /* Align images to the top */
         margin-top: 20px; /* Adjust margin as needed */
 position: absolute;  }
+.ContPne{
+    display: flex;
+    flex-direction: row;
+}
     .logoMarquesup {
       display: flex;
         justify-content: space-around; /* Horizontally distribute images */
         align-items: flex-start; /* Align images to the top */
-        margin-top: 20px; /* Adjust margin as needed */
-        top: 50%;
-position: absolute;  }
+margin-top: 5%; }
     .logoMarques img ,.logoMarquesup img{
         width: 20%;
         height: auto;
@@ -506,12 +489,16 @@ color: darkred;
 .heures{
 margin:2%;  
 }
+.indexContainer{
+    display: flex;
+    flex-direction: row;
+}
 .address{
   background-color: rgba(195, 27, 27, 50%);
   top: 41%;
   font-family:'Times New Roman', Times, serif;
   font-style: italic;
-  font-size: 25px;
+  font-size: 1.4rem;
   white-space: nowrap;
   padding: 2.5%;
   border-radius: 5px;
@@ -520,8 +507,8 @@ margin:2%;
   text-align: center;
   width: 24%;
   max-width: 500px;
-  position: absolute;
-  margin: 20px;
+margin-left: 20%;
+margin-top: 1%;
   border: 5px solid black
 }.address .igeo {
   width: 5%;
@@ -538,6 +525,10 @@ margin:2%;
 }
 .montageContainer{
 display: flex;
+}
+.image-taille img{
+    width: 100%;
+    height: auto;
 }
 .montage{
   font-size: 35px;
@@ -628,97 +619,18 @@ color: yellow;
 
 
 /* Large Desktop Screens */
-@media screen and (min-width: 1920px) {
-    .address {
-        top: 3vh;
-        font-size: 20px;
-      }
-      .slogan{
-        font-size: 42px;
-        left: -40%;
 
-    }
-    .logoMarques {
-          margin-top: 30px; /* Adjust margin as needed */
-  }
-      .logoMarquesup {
-          top: 47%;
- }
-  .forpne{
-    top: 54vh;
-    left: 9vw;}
-.formec{
-    top: 54vh;
-    left: 72vw;
-}
-.forpnen{
-  top: 54vh;
-  left: 41vw;
-}
-.monPn{
-  top: 110vh;
-  left: 53vw;
-}    
-.outlined-text{
-    font-size: 38px;
-}
-.btn{
-    padding: 20px 40px;
-    font-size: 20px;
-}
-.logoMarquesupCon .fal{
-    margin-top: 0.5%;
-    width: 27%;
-    height: auto;
-}.logoMarquesupCon .hank{
-    margin-top: 4%;
-    width: 24%;
-    height: auto;
-}.logoMarquesupCon .dun{
-    margin-top: 1%;
-    width: 24%;
-    height: auto;
-}.logoMarquesupCon .pir{
-    margin-top: 3%;
-    width: 17%;
-    height: auto;}
-.logoMarquesupCon {
-    margin-top: 10vh;}
-  }
   
 
 
   @media screen and (min-width: 1600px) and (max-width: 1919px) {
-    .address {
-        top: 38.5%;
-        font-size: 20px;
-      }
+
       .slogan{
         font-size: 42px;
         left: -39%;
 
     }
-    .logoMarques {
-          margin-top: 30px; /* Adjust margin as needed */
-  }
-      .logoMarquesup {
-          top: 47%;
- }
-  .forpne{
-    top: 58vh;
-    left: 7vw;}
-.formec{
-    top: 58vh;
-    left: 69vw;
-}
-.forpnen{
-  top: 58vh;
-  left: 39vw;
-}
-.monPn{
-  top: 117vh;
-  left: 60vw;
-}    
+
 .outlined-text{
     font-size: 38px;
 }
@@ -726,57 +638,17 @@ color: yellow;
     padding: 20px 40px;
     font-size: 20px;
 }
-.logoMarquesupCon .fal{
-    margin-top: 0.5%;
-    width: 27%;
-    height: auto;
-}.logoMarquesupCon .hank{
-    margin-top: 4%;
-    width: 24%;
-    height: auto;
-}.logoMarquesupCon .dun{
-    margin-top: 1%;
-    width: 24%;
-    height: auto;
-}.logoMarquesupCon .pir{
-    margin-top: 3%;
-    width: 17%;
-    height: auto;}
-.logoMarquesupCon {
-    margin-top: 10vh;}
+
   }
   
   @media screen and (min-width: 1536px) and (max-width: 1599px) {
-    .address {
-        top: 39.5%;
-        font-size: 20px;
-      }
+
       .slogan{
         font-size: 42px;
         left: -44%;
 
     }
-    .logoMarques {
-          margin-top: 30px; /* Adjust margin as needed */
-  }
-      .logoMarquesup {
-          top: 47%;
- }
-  .forpne{
-    top: 57vh;
-    left: 6vw;}
-.formec{
-    top: 57vh;
-    left: 69vw;
-}
-.forpnen{
-  top: 57vh;
-  left: 38vw;
-}
-.monPn{
-  top: 120vh;
-  left: 58vw;
-}    
+  
 .outlined-text{
     font-size: 38px;
 }
@@ -784,24 +656,7 @@ color: yellow;
     padding: 20px 40px;
     font-size: 20px;
 }
-.logoMarquesupCon .fal{
-    margin-top: 0.5%;
-    width: 27%;
-    height: auto;
-}.logoMarquesupCon .hank{
-    margin-top: 4%;
-    width: 24%;
-    height: auto;
-}.logoMarquesupCon .dun{
-    margin-top: 1%;
-    width: 24%;
-    height: auto;
-}.logoMarquesupCon .pir{
-    margin-top: 3%;
-    width: 17%;
-    height: auto;}
-.logoMarquesupCon {
-    margin-top: 10vh;}
+
   }
   
 
@@ -809,36 +664,13 @@ color: yellow;
 
 
   @media screen and (min-width: 1440px) and (max-width: 1535px) {
-    .address {
-        top: 38%;
-        font-size: 20px;
-      }
+
       .slogan{
         font-size: 42px;
         left: -44%;
 
     }
-    .logoMarques {
-          margin-top: 30px; /* Adjust margin as needed */
-  }
-      .logoMarquesup {
-          top: 47%;
- }
-  .forpne{
-    top: 55vh;
-    left: 6vw;}
-.formec{
-    top: 55vh;
-    left: 69vw;
-}
-.forpnen{
-  top: 55vh;
-  left: 38vw;
-}
-.monPn{
-  top: 112vh;
-  left: 60vw;
-}    
+   
 .outlined-text{
     font-size: 38px;
 }
@@ -846,24 +678,7 @@ color: yellow;
     padding: 20px 40px;
     font-size: 20px;
 }
-.logoMarquesupCon .fal{
-    margin-top: 0.5%;
-    width: 27%;
-    height: auto;
-}.logoMarquesupCon .hank{
-    margin-top: 4%;
-    width: 24%;
-    height: auto;
-}.logoMarquesupCon .dun{
-    margin-top: 1%;
-    width: 24%;
-    height: auto;
-}.logoMarquesupCon .pir{
-    margin-top: 3%;
-    width: 17%;
-    height: auto;}
-.logoMarquesupCon {
-    margin-top: 10vh;}
+
   }
   
 
@@ -871,36 +686,13 @@ color: yellow;
 
   
   @media screen and (min-width: 1366px) and (max-width: 1439px) {
-    .address {
-        top: 43%;
-        font-size: 20px;
-      }
+
       .slogan{
         font-size: 42px;
         left: -46%;
 
     }
-    .logoMarques {
-          margin-top: 30px; /* Adjust margin as needed */
-  }
-      .logoMarquesup {
-          top: 55%;
- }
-  .forpne{
-    top: 62vh;
-    left: 6vw;}
-.formec{
-    top: 62vh;
-    left: 69vw;
-}
-.forpnen{
-  top: 62vh;
-  left: 38vw;
-}
-.monPn{
-  top: 130vh;
-  left: 64vw;
-}    
+
 .outlined-text{
     font-size: 35px;
 }
@@ -908,24 +700,7 @@ color: yellow;
     padding: 20px 40px;
     font-size: 20px;
 }
-.logoMarquesupCon .fal{
-    margin-top: 0.5%;
-    width: 27%;
-    height: auto;
-}.logoMarquesupCon .hank{
-    margin-top: 4%;
-    width: 24%;
-    height: auto;
-}.logoMarquesupCon .dun{
-    margin-top: 1%;
-    width: 24%;
-    height: auto;
-}.logoMarquesupCon .pir{
-    margin-top: 3%;
-    width: 17%;
-    height: auto;}
-.logoMarquesupCon {
-    margin-top: 10vh;}
+
   }
   
 
@@ -933,37 +708,13 @@ color: yellow;
 
 
   @media screen and (min-width: 1280px) and (max-width: 1365px) {
-    .address {
-        top: 40vh;
-        font-size: 20px;
-      }
+
       .slogan{
         font-size: 42px;
         left: -60%;
 
     }
-    .logoMarques {
-          margin-top: 30px; /* Adjust margin as needed */
-  }
-      .logoMarquesup {
-          top: 55%;
- }
-  .forpne{
-    top: 60vh;
-    left: 7vw;}
-.formec{
-    top: 60vh;
-    left: 69vw;
-}
-
-.forpnen{
-  top: 60vh;
-  left: 38vw;
-}
-.monPn{
-  top: 145vh;
-  left: 70vw;
-}    
+ 
 .outlined-text{
     font-size: 30px;
 }
@@ -976,24 +727,7 @@ color: yellow;
     padding: 20px 40px;
     font-size: 20px;
 }
-.logoMarquesupCon .fal{
-    margin-top: 0.5%;
-    width: 27%;
-    height: auto;
-}.logoMarquesupCon .hank{
-    margin-top: 4%;
-    width: 24%;
-    height: auto;
-}.logoMarquesupCon .dun{
-    margin-top: 1%;
-    width: 24%;
-    height: auto;
-}.logoMarquesupCon .pir{
-    margin-top: 3%;
-    width: 17%;
-    height: auto;}
-.logoMarquesupCon {
-    margin-top: 10vh;}
+
   }
 
 
@@ -1011,11 +745,6 @@ margin-left: 0.5%;
 margin-right: 0.5%;
     }
     
-    .address {
-        top: 39vh;
-        font-size: 15px;
-        left: 50vw;
-      }
 
     .black-box {
         padding: 5px;
@@ -1041,27 +770,7 @@ margin-right: 0.5%;
         font-size: 40px;
     }
     
-    .logoMarques {
-          margin-top: 30px; /* Adjust margin as needed */
-  }
-      .logoMarquesup {
-          top: 50%;
- }
-  .forpne{
-    top: 57vh;
-    left: 6vw;}
-.formec{
-    top: 57vh;
-    left: 69vw;
-}
-.forpnen{
-  top: 57vh;
-  left: 38vw;
-}
-.monPn{
-  top: 140vh;
-  left: 78vw;
-}    
+
 .outlined-text{
     font-size: 25px;
 }
@@ -1077,24 +786,7 @@ margin-right: 0.5%;
     padding: 20px 40px;
     font-size: 20px;
 }
-.logoMarquesupCon .fal{
-    margin-top: 0.5%;
-    width: 27%;
-    height: auto;
-}.logoMarquesupCon .hank{
-    margin-top: 4%;
-    width: 24%;
-    height: auto;
-}.logoMarquesupCon .dun{
-    margin-top: 1%;
-    width: 24%;
-    height: auto;
-}.logoMarquesupCon .pir{
-    margin-top: 3%;
-    width: 17%;
-    height: auto;}
-.logoMarquesupCon {
-    margin-top: 10vh;}
+
   }
   
 
@@ -1110,12 +802,6 @@ margin-right: 0.5%;
 margin-left: 0.5%;
 margin-right: 0.5%;
     }
-    
-    .address {
-        top: 50vh;
-        font-size: 15px;
-        left: 50vw;
-      }
 
     .black-box {
         padding: 5px;
@@ -1140,28 +826,7 @@ margin-right: 0.5%;
         top: 86%;
         font-size: 40px;
     }
-    
-    .logoMarques {
-          margin-top: 30px; /* Adjust margin as needed */
-  }
-      .logoMarquesup {
-          top: 62%;
- }
-  .forpne{
-    top: 70vh;
-    left: 3vw;}
-.formec{
-    top: 70vh;
-    left: 71vw;
-}
-.forpnen{
-  top: 70vh;
-  left: 38vw;
-}
-.monPn{
-  top: 178vh;
-  left: 79vw;
-}    
+   
 .outlined-text{
     font-size: 25px;
 }
@@ -1177,24 +842,7 @@ margin-right: 0.5%;
     padding: 20px 40px;
     font-size: 20px;
 }
-.logoMarquesupCon .fal{
-    margin-top: 0.5%;
-    width: 27%;
-    height: auto;
-}.logoMarquesupCon .hank{
-    margin-top: 4%;
-    width: 24%;
-    height: auto;
-}.logoMarquesupCon .dun{
-    margin-top: 1%;
-    width: 24%;
-    height: auto;
-}.logoMarquesupCon .pir{
-    margin-top: 3%;
-    width: 17%;
-    height: auto;}
-.logoMarquesupCon {
-    margin-top: 10vh;}
+
   }
   
 
@@ -1211,11 +859,7 @@ margin-left: 0.5%;
 margin-right: 0.5%;
     }
     
-    .address {
-        top: 39vh;
-        font-size: 15px;
-        left: 50vw;
-      }
+
 
     .black-box {
         padding: 5px;
@@ -1241,27 +885,7 @@ margin-right: 0.5%;
         font-size: 40px;
     }
     
-    .logoMarques {
-          margin-top: 30px; /* Adjust margin as needed */
-  }
-      .logoMarquesup {
-          top: 50%;
- }
-  .forpne{
-    top: 57vh;
-    left: 6vw;}
-.formec{
-    top: 57vh;
-    left: 69vw;
-}
-.forpnen{
-  top: 57vh;
-  left: 38vw;
-}
-.monPn{
-  top: 140vh;
-  left: 78vw;
-}    
+  
 .outlined-text{
     font-size: 25px;
 }
@@ -1277,24 +901,7 @@ margin-right: 0.5%;
     padding: 20px 40px;
     font-size: 20px;
 }
-.logoMarquesupCon .fal{
-    margin-top: 0.5%;
-    width: 27%;
-    height: auto;
-}.logoMarquesupCon .hank{
-    margin-top: 4%;
-    width: 24%;
-    height: auto;
-}.logoMarquesupCon .dun{
-    margin-top: 1%;
-    width: 24%;
-    height: auto;
-}.logoMarquesupCon .pir{
-    margin-top: 3%;
-    width: 17%;
-    height: auto;}
-.logoMarquesupCon {
-    margin-top: 10vh;}
+
   }
   
 
@@ -1311,11 +918,7 @@ margin-left: 0.5%;
 margin-right: 0.5%;
     }
     
-    .address {
-        top: 39vh;
-        font-size: 15px;
-        left: 50vw;
-      }
+
 
     .black-box {
         padding: 5px;
@@ -1341,27 +944,7 @@ margin-right: 0.5%;
         font-size: 40px;
     }
     
-    .logoMarques {
-          margin-top: 30px; /* Adjust margin as needed */
-  }
-      .logoMarquesup {
-          top: 50%;
- }
-  .forpne{
-    top: 57vh;
-    left: 6vw;}
-.formec{
-    top: 57vh;
-    left: 69vw;
-}
-.forpnen{
-  top: 57vh;
-  left: 38vw;
-}
-.monPn{
-  top: 140vh;
-  left: 78vw;
-}    
+
 .outlined-text{
     font-size: 25px;
 }
@@ -1377,24 +960,7 @@ margin-right: 0.5%;
     padding: 20px 40px;
     font-size: 20px;
 }
-.logoMarquesupCon .fal{
-    margin-top: 0.5%;
-    width: 27%;
-    height: auto;
-}.logoMarquesupCon .hank{
-    margin-top: 4%;
-    width: 24%;
-    height: auto;
-}.logoMarquesupCon .dun{
-    margin-top: 1%;
-    width: 24%;
-    height: auto;
-}.logoMarquesupCon .pir{
-    margin-top: 3%;
-    width: 17%;
-    height: auto;}
-.logoMarquesupCon {
-    margin-top: 10vh;}
+
   }
   
 
@@ -1410,12 +976,7 @@ margin-right: 0.5%;
 margin-left: 0.5%;
 margin-right: 0.5%;
     }
-    
-    .address {
-        top: 39vh;
-        font-size: 15px;
-        left: 50vw;
-      }
+
 
     .black-box {
         padding: 5px;
@@ -1441,27 +1002,7 @@ margin-right: 0.5%;
         font-size: 40px;
     }
     
-    .logoMarques {
-          margin-top: 30px; /* Adjust margin as needed */
-  }
-      .logoMarquesup {
-          top: 50%;
- }
-  .forpne{
-    top: 57vh;
-    left: 6vw;}
-.formec{
-    top: 57vh;
-    left: 69vw;
-}
-.forpnen{
-  top: 57vh;
-  left: 38vw;
-}
-.monPn{
-  top: 140vh;
-  left: 78vw;
-}    
+
 .outlined-text{
     font-size: 25px;
 }
@@ -1477,24 +1018,7 @@ margin-right: 0.5%;
     padding: 20px 40px;
     font-size: 20px;
 }
-.logoMarquesupCon .fal{
-    margin-top: 0.5%;
-    width: 27%;
-    height: auto;
-}.logoMarquesupCon .hank{
-    margin-top: 4%;
-    width: 24%;
-    height: auto;
-}.logoMarquesupCon .dun{
-    margin-top: 1%;
-    width: 24%;
-    height: auto;
-}.logoMarquesupCon .pir{
-    margin-top: 3%;
-    width: 17%;
-    height: auto;}
-.logoMarquesupCon {
-    margin-top: 10vh;}
+
   }
   
 
@@ -1511,11 +1035,7 @@ margin-left: 0.5%;
 margin-right: 0.5%;
     }
     
-    .address {
-        top: 39vh;
-        font-size: 15px;
-        left: 50vw;
-      }
+
 
     .black-box {
         padding: 5px;
@@ -1541,27 +1061,7 @@ margin-right: 0.5%;
         font-size: 40px;
     }
     
-    .logoMarques {
-          margin-top: 30px; /* Adjust margin as needed */
-  }
-      .logoMarquesup {
-          top: 50%;
- }
-  .forpne{
-    top: 57vh;
-    left: 6vw;}
-.formec{
-    top: 57vh;
-    left: 69vw;
-}
-.forpnen{
-  top: 57vh;
-  left: 38vw;
-}
-.monPn{
-  top: 140vh;
-  left: 78vw;
-}    
+
 .outlined-text{
     font-size: 25px;
 }
@@ -1577,24 +1077,7 @@ margin-right: 0.5%;
     padding: 20px 40px;
     font-size: 20px;
 }
-.logoMarquesupCon .fal{
-    margin-top: 0.5%;
-    width: 27%;
-    height: auto;
-}.logoMarquesupCon .hank{
-    margin-top: 4%;
-    width: 24%;
-    height: auto;
-}.logoMarquesupCon .dun{
-    margin-top: 1%;
-    width: 24%;
-    height: auto;
-}.logoMarquesupCon .pir{
-    margin-top: 3%;
-    width: 17%;
-    height: auto;}
-.logoMarquesupCon {
-    margin-top: 10vh;}
+
   }
   
 
@@ -1614,11 +1097,7 @@ margin-left: 0.5%;
 margin-right: 0.5%;
     }
     
-    .address {
-        top: 39vh;
-        font-size: 15px;
-        left: 50vw;
-      }
+
 
     .black-box {
         padding: 5px;
@@ -1644,27 +1123,7 @@ margin-right: 0.5%;
         font-size: 40px;
     }
     
-    .logoMarques {
-          margin-top: 30px; /* Adjust margin as needed */
-  }
-      .logoMarquesup {
-          top: 50%;
- }
-  .forpne{
-    top: 57vh;
-    left: 6vw;}
-.formec{
-    top: 57vh;
-    left: 69vw;
-}
-.forpnen{
-  top: 57vh;
-  left: 38vw;
-}
-.monPn{
-  top: 140vh;
-  left: 78vw;
-}    
+   
 .outlined-text{
     font-size: 25px;
 }
@@ -1680,24 +1139,7 @@ margin-right: 0.5%;
     padding: 20px 40px;
     font-size: 20px;
 }
-.logoMarquesupCon .fal{
-    margin-top: 0.5%;
-    width: 27%;
-    height: auto;
-}.logoMarquesupCon .hank{
-    margin-top: 4%;
-    width: 24%;
-    height: auto;
-}.logoMarquesupCon .dun{
-    margin-top: 1%;
-    width: 24%;
-    height: auto;
-}.logoMarquesupCon .pir{
-    margin-top: 3%;
-    width: 17%;
-    height: auto;}
-.logoMarquesupCon {
-    margin-top: 10vh;}
+
   }
   
 
