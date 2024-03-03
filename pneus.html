@@ -31,18 +31,21 @@
     </header>
     
 
-    <nav>
-        <a href="index.html">Accueil</a>
-        <a href="pneus.html">Nos prix</a>
-        <a href="devis.html">Demander une devis</a>
-        <a href="promotion.html">Promotions </a>
-        <a href="geometrie.html">Géometrie</a>
-        <a href="entretien.html">Entretien</a>
-        <a href="pare-brise.html">Pare-brise</a>
-        <a href="contact.html">Contact</a>
+    <nav id="main-nav">
+        <button  class="hamburger">&#9776;</button>
+        <div id="nav-links" class="nav-menu">
+            <a href="index.html" class="nav-link">Accueil</a>
+            <a href="pneus.html" class="nav-link">Nos prix</a>
+            <a href="devis.html" class="nav-link">Demander une devis</a>
+            <a href="promotion.html" class="nav-link">Promotions</a>
+            <a href="geometrie.html" class="nav-link">Géometrie</a>
+            <a href="entretien.html" class="nav-link">Entretien</a>
+            <a href="pare-brise.html" class="nav-link">Pare-brise</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </div>
 
     </nav>
-
+    
 
     <div class="ContPne">
         <div class="prix"><h2>Prix pneu </h2>
@@ -54,14 +57,13 @@
         <img class="pir" src="pir.png" alt="Pneu">
     </div>
 </div>
-    <h2 class="outlined-text formec" data-text="Forfait mécanique">Forfait mécanique</h2>
-    <h2 class="outlined-text forpne" data-text="Forfait Pneu Occasion">Forfait Pneu Occasion</h2>
-    <h2 class="outlined-text forpnen" data-text="Forfait Pneu Neuf">Forfait Pneu Neuf</h2>
+
 
     <div class="containerPneus"></div>
         <div class="tables-container">
-    <div class="table-container table-2">
-        <table class="table">
+<div class="titleTable">
+    <h2 class="outlined-text forpne" data-text="Forfait Pneu Occasion">Forfait Pneu Occasion</h2>
+        <table class="table-2">
             <tr>
                 <th colspan="3" class="table-header">2 pneus</th>
             </tr>
@@ -106,55 +108,11 @@
                 <td class="leftAl">160€</td>
             </tr>
         </table>
-        <div class="table-separator"></div> <!-- Separator between tables -->
-        <table class="table">
-            <tr>
-                <th colspan="3" class="table-header">4 pneus</th>
-            </tr>
-            <tr>
-                <td class="rightAl">13''</td>
-                <td class="centerAl">à partir de </td>
-                <td class="leftAl">120€</td>
-            </tr>
-            <tr>
-                <td class="rightAl">14''</td>
-                <td class="centerAl">à partir de </td>
-                <td class="leftAl">120€</td>
-            </tr>
-            <tr>
-                <td class="rightAl">15''</td>
-                <td class="centerAl">à partir de </td>
-                <td class="leftAl">120€</td>
-            </tr>
-            <tr>
-                <td class="rightAl">16''</td>
-                <td class="centerAl">à partir de </td>
-                <td class="leftAl">140€</td>
-            </tr>
-            <tr>
-                <td class="rightAl">17''</td>
-                <td class="centerAl">à partir de </td>
-                <td class="leftAl">160€</td>
-            </tr>
-            <tr>
-                <td class="rightAl">18''</td>
-                <td class="centerAl">à partir de </td>
-                <td class="leftAl">240€</td>
-            </tr>
-            <tr>
-                <td class="rightAl">19''</td>
-                <td class="centerAl">à partir de </td>
-                <td class="leftAl">280€</td>
-            </tr>
-            <tr>
-                <td class="rightAl">20''</td>
-                <td class="centerAl">à partir de </td>
-                <td class="leftAl">320€</td>
-            </tr>
-        </table>
-
     </div>
-            <table class="table-2">
+    <div class="titleTable">
+        <h2 class="outlined-text forpnen" data-text="Forfait Pneu Neuf">Forfait Pneu Neuf</h2>
+
+            <table class="table-2" >
                 <tr>
                     <th colspan="3" class="table-header">2 pneus</th>
                 </tr>
@@ -195,6 +153,11 @@
                     <td class="leftAl">300€</td>
                 </tr>
             </table>
+    </div>
+    <div class="titleTable">
+        <h2 class="outlined-text formec" data-text="Forfait mécanique">Forfait mécanique</h2>
+
+
     <table class="table-2">
 
         <tr>
@@ -260,13 +223,46 @@
         </tr>
     </table>
 </div>
-<h2 class="outlined-text monPn" data-text="Montage Pneu">Montage Pneu</h2>
-
+</div>
 <div class="montageContainer">
+<div class="titleTable">
+    <h2 class="outlined-text monPn" data-text="Montage Pneu">Montage Pneu</h2>
+
+
+<table class="table-2">
+
+    <tr>
+        <td class="rightAl">13''/14''</td>
+        <td class="centerAl">Pour</td>
+        <td class="leftAl">15€</td>
+    </tr>
+    <tr>
+        <td class="rightAl">15''/16''/17''</td>
+        <td class="centerAl">Pour</td>
+        <td class="leftAl">20€</td>
+    </tr>
+    <tr>
+        <td class="rightAl">18''/19''</td>
+        <td class="centerAl">Pour </td>
+        <td class="leftAl">25€</td>
+    </tr>
+    <tr>
+        <td class="rightAl">20''/21'' </td>
+        <td class="centerAl">Pour </td>
+        <td class="leftAl">30€</td>
+    </tr>
+    <tr>
+        <td class="rightAl">Camion</td>
+        <td class="centerAl">Pour </td>
+        <td class="leftAl">25€</td>
+    </tr>
+   
+</table>
+</div>
+
 <div class="image-taille">
     <img src="trouveTaille.png" alt="Votre taille de pneu">
 </div>
-<div class="montage">  <span class="mont">13''/14'' pour <span class="prixM"> 15€ </span> </span> <span class="mont">15''/16''/17'' pour <span class="prixM"> 20€ </span> </span> <span class="mont"> 18''/19'' pour<span class="prixM"> 25€ </span> </span> <span class="mont"> 20''/21'' pour<span class="prixM"> 30€ </span></span> <span class="mont"> Camion pour<span class="prixM"> 25€ </span></span></div>
 </div>   <div class="logoMarques">
         <img class="cont" src="dun.png" alt="Pneu">
         <img class="good" src="good.png" alt="Pneu">
@@ -274,6 +270,6 @@
         <img class="brid" src="brid.png" alt="Pneu">
     </div>
 
-
+    <script src="script.js"></script>
 </body>
 </html>

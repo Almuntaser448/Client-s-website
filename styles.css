@@ -19,7 +19,7 @@ label::after {
 }
 .brand {
     display: inline-block;
-    font-size: 48px;
+    font-size: 3rem;
     margin-bottom: 10px;
     position: relative;
     width: 70%;
@@ -32,9 +32,9 @@ label::after {
     border-radius: 5px;
     display: inline-block;
     width: 30%;
-    max-width: 500px;
+    max-width: 60%;
     position: relative;
-    margin: 20px;
+    margin: 0.3%;
     border: 5px solid black;
 }
 
@@ -43,7 +43,7 @@ label::after {
     background-color: #000;
     padding: 5px;
     color: #fff;
-    font-size: 72px;
+    font-size: 5rem;
     position: absolute;
     top: 32%;
     left: 50%;
@@ -60,7 +60,7 @@ label::after {
     font-weight: bold;
     padding: 5px;
     color: #fff;
-    font-size: 72px;
+    font-size: 4.3rem;
     position: absolute;
     top: 50%;
     left: 1%;
@@ -70,7 +70,7 @@ label::after {
 }
 
 .title {
-    font-size: 48px;
+    font-size: 2rem;
     position: absolute;
     bottom: 5px;
     left: 5px;
@@ -83,7 +83,7 @@ label::after {
 .montmagny {
     top: 86%;
     font-style: italic;
-    font-size: 40px;
+    font-size: 2.5rem;
     white-space: nowrap;
     color:  #ffff00;
 }
@@ -112,19 +112,26 @@ label::after {
     top: 110%;
     font-family:'Times New Roman', Times, serif;
     font-style: italic;
-    font-size: 45px;
+    font-size: 3rem;
     white-space: nowrap;
     left: -27%;
     color:#fff;
+    padding-bottom: 1%;
+    
 }
 
 nav {
+    position: sticky;
+    top: 0;
     background-color: #d50000;
     padding: 10px;
     text-align: center;
     margin-top: 50px;
+    z-index: 1000;
 }
-
+nav button{
+    display: none;
+}
 nav a {
     color: #fff;
     text-decoration: none;
@@ -135,8 +142,6 @@ nav a {
 nav a:hover {
     text-decoration: underline;
 }
-
-
 
 
 
@@ -234,31 +239,35 @@ nav a:hover {
     display: flex;
     flex-direction: column;
 }
-
-.tables-container {
-    display: flex;
+.tables-container.table-2 {
     margin: 5%;
     border-radius: 10px;
     overflow: hidden; /* Ensure overflow is hidden to maintain rounded corners */
     flex: 1; /* Fill available space */
 }
 
-.table-container {
+.tables-container {
+    margin: 2%;
     display: flex;
-    background-color: #c2463a; /* Background color for both tables */
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add shadow to the table container */
-    overflow: hidden; /* Ensure overflow is hidden to maintain rounded corners */
-    flex: 1;
-  
-} 
-
-.table {
-    border-collapse: collapse; /* Collapse table borders */
-    color: #fff; /* Text color */
-    width: 100%; /* Ensure table takes up full width */
-
+    flex-direction: row; /* Change flex direction to row */
 }
+
+/* Apply horizontal layout to elements inside tables-container */
+.tables-container > * {
+    display: flex;
+    flex-grow: 1; /* Make each table take up all available space */
+}
+
+/* Add spacing between elements inside tables-container */
+.tables-container > * > * {
+    margin-right: 10px; /* Adjust spacing as needed */
+}
+
+/* Ensure last element doesn't have margin-right */
+.tables-container > * > *:last-child {
+    margin-right: 0;
+}
+
 
 .table-header {
     background-color: #c2463a; /* Header background color */
@@ -268,15 +277,6 @@ nav a:hover {
     font-size: 45px;
 }
 
-.table td, .table th {
-    border: none; /* Remove cell borders */
-    padding: 10px 10px;
-}
-
-.table-separator {
-    width: 5px; /* Width of the separator */
-    background-color: #fff; /* Color of the separator */
-}
 
 .rightAl {
     text-align: right;
@@ -295,6 +295,7 @@ nav a:hover {
     padding: 1%;
 }
 .outlined-text {
+    margin-left: 7%;
     position: relative;
     display: inline-block;
     font-size: 48px; /* Adjust font size */
@@ -315,22 +316,11 @@ nav a:hover {
     color: #c2463a;; /* Outline color */
     z-index: -1;
 }
-.forpne{
-    position: absolute;
-    top:  59vh;
-    left: 6vw;}
-.formec{
-    position: absolute;
-    top: 59vh;
-    left: 69vw;
-}
-.forpnen{
-  position: absolute;
-  top: 59vh;
-  left: 38vw;
-}
-.monPn{
-  left: 60%;
+
+
+.titleTable{
+    display: block;
+    margin-bottom: 8%;
 }
 .table-2 {
     border-collapse: collapse; /* Collapse table borders */
@@ -339,10 +329,11 @@ nav a:hover {
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add shadow to the table container */
     overflow: hidden; /* Ensure overflow is hidden to maintain rounded corners */
-  margin: 2%;
-    width: 30%; /* Minimum width to prevent it from shrinking too much */
+    height: 100%;
+
+    width: 90%; /* Minimum width to prevent it from shrinking too much */
 }
-.table-2 .rightAl,.table-2 .centerAl  {
+.table-2 .rightAl {
     text-align:left;
     padding: 2%;
 }
@@ -503,11 +494,10 @@ margin:2%;
   padding: 2.5%;
   border-radius: 5px;
   display: inline-block;
-  left: 34%;
   text-align: center;
   width: 24%;
   max-width: 500px;
-margin-left: 20%;
+margin-left: 5%;
 margin-top: 1%;
   border: 5px solid black
 }.address .igeo {
@@ -526,24 +516,17 @@ margin-top: 1%;
 .montageContainer{
 display: flex;
 }
+.montageContainer .titleTable {
+    margin-left: 2%; /* Your styles here */
+    margin-right: 30%;
+    width:20%;
+}
+
 .image-taille img{
     width: 100%;
     height: auto;
 }
-.montage{
-  font-size: 35px;
-  font-weight: bold;
-  display: flex;    
-background-color: #c2463a; /* Background color for both tables */
-border-radius: 10px;
-width: 30%;
-margin-left: 10%;
-padding: 2%;
-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add shadow to the table container */
-overflow: hidden; /* Ensure overflow is hidden to maintain rounded corners */
-text-align: center;
-flex-direction: column;
-}
+
 .prixM{
 color: yellow;
 }
@@ -595,15 +578,34 @@ color: yellow;
     display: flex;
     justify-content: space-around; /* Horizontally distribute images */
     align-items: flex-start; /* Align images to the top */
-    margin-top: 20px; /* Adjust margin as needed */
 }
 
 @media screen and (max-width: 890px) {
-    /* Hide the hamburger menu by default */
-    .hamburger-menu {
-        display: none;
+    .tables-container{
+        flex-direction: column;
     }
-    
+    .hamburger {
+        display: block; /* Show the hamburger icon on screens smaller than 600px */
+      }    
+.nav-menu {
+    display: none; /* Hide the nav menu by default */
+}
+    .outlined-text{
+        margin-left: 14%;
+    }
+.image-taille img{
+    width: 80%;
+    height: auto;
+}
+    .montageContainer{
+        flex-direction: column;
+        }
+        .montageContainer .titleTable {
+            margin-left: 2%; /* Your styles here */
+            margin-right: 2%;
+            width:100%;
+        }
+
     /* Show the navigation links */
     .nav-links {
         display: block;
@@ -740,7 +742,7 @@ color: yellow;
         height: 50px;
         border-radius: 50%;
     }
-    .tables-container {
+    .tables-container.table-2 {
 margin-left: 0.5%;
 margin-right: 0.5%;
     }
@@ -798,7 +800,7 @@ margin-right: 0.5%;
         height: 40px;
         border-radius: 50%;
     }
-    .tables-container {
+    .tables-container.table-2 {
 margin-left: 0.5%;
 margin-right: 0.5%;
     }
@@ -844,17 +846,31 @@ margin-right: 0.5%;
 }
 
   }
+  .nav-menu {
+
+
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    transition: left 0.3s ease-in-out, background-color 0.3s ease; /* Added transition for background color */
+  }
+  
+  .nav-menu.active {
+    left: 0;
+display: flex;
+flex-direction: column;  }
   
 
-
-  @media screen and (min-width: 800px) and (max-width: 961px) { /*hamburger*/
+  @media screen and (min-width: 800px) and (max-width: 961px) { 
     .social-icons img {
         width: 40px;
         height: 40px;
         border-radius: 50%;
         margin-top: 10%;
     }
-    .tables-container {
+    .tables-container.table-2 {
 margin-left: 0.5%;
 margin-right: 0.5%;
     }
@@ -913,7 +929,7 @@ margin-right: 0.5%;
         height: 50px;
         border-radius: 50%;
     }
-    .tables-container {
+    .tables-container.table-2 {
 margin-left: 0.5%;
 margin-right: 0.5%;
     }
@@ -972,7 +988,7 @@ margin-right: 0.5%;
         height: 50px;
         border-radius: 50%;
     }
-    .tables-container {
+    .tables-container.table-2 {
 margin-left: 0.5%;
 margin-right: 0.5%;
     }
@@ -1030,7 +1046,7 @@ margin-right: 0.5%;
         height: 50px;
         border-radius: 50%;
     }
-    .tables-container {
+    .tables-.table-2 {
 margin-left: 0.5%;
 margin-right: 0.5%;
     }
@@ -1092,7 +1108,7 @@ margin-right: 0.5%;
         height: 50px;
         border-radius: 50%;
     }
-    .tables-container {
+    .tables-.table-2 {
 margin-left: 0.5%;
 margin-right: 0.5%;
     }
