@@ -8,39 +8,7 @@ hamburger.addEventListener("click", () => {
   })
 
 
-    document.addEventListener('DOMContentLoaded', function() {
-        // Target the form element
-        var form = document.getElementById('contact-form');
-    
-        // Add event listener for form submission
-        form.addEventListener('submit', function(event) {
-            // Prevent the default form submission behavior
-            event.preventDefault();
-    
-            // Get the form data
-            var formData = new FormData(form);
-    
-            // Send the form data to your backend service using fetch API
-            fetch('your-backend-service-url', {
-                method: 'POST',
-                body: formData
-            })
-            .then(response => {
-                if (response.ok) {
-                    // Handle successful form submission
-                    console.log('Form submitted successfully!');
-                    // You can show a success message or redirect the user to a thank you page
-                } else {
-                    // Handle form submission error
-                    console.error('Form submission failed!');
-                }
-            })
-            .catch(error => {
-                // Handle network errors or other errors
-                console.error('Error:', error);
-            });
-        });
-    });
+
     function displayGoogleMapsReviews() {
         // Replace 'YOUR_PLACE_ID' with your actual place ID
         const placeId = 'YOUR_PLACE_ID';
@@ -118,6 +86,6 @@ function openGeo() {
 
 
     function openMailTo() {
-        window.open('mailto:votremail@mail.com', '_blank');
+        window.open('mailto:contact@usinedupneu-montmagny.fr', '_blank');
     }
 
